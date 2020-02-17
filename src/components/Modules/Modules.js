@@ -16,6 +16,7 @@ class Modules extends React.Component {
         <DashCard
           number={module.module}
           lessons={module.lessons}
+          key={module.module}
         />
       );
     });
