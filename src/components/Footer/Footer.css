@@ -1,0 +1,19 @@
+.footer {
+  padding: 30px;
+  font-size: 12px;
+  margin-top: 70px;
+}
+
+.icon {
+  width: 25px;
+}
+
+.copyright {
+  font-size: 11px;
+  margin-bottom: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}

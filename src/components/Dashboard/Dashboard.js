@@ -2,6 +2,8 @@ import React from "react";
 import Welcome from '../Welcome/Welcome'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Modules from '../Modules/Modules'
+import Footer from '../Footer/Footer'
+
 import "./Dashboard.css";
 
 class Dashboard extends React.Component {
@@ -21,6 +23,7 @@ class Dashboard extends React.Component {
           />
         <Modules 
           className="modules"/>
+        <Footer />
       </>
     );
   }
