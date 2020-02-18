@@ -20,8 +20,8 @@ class DashCard extends React.Component {
 
     return (
       <Card className="module-title">
-        <Accordion.Toggle as={Card.Header} eventKey={this.props.number}>
-          Module {this.props.number}
+        <Accordion.Toggle as={Card.Header} eventKey={this.props.number} className="title">
+          Name of Unit {this.props.number}
         </Accordion.Toggle>
         {renderedLessons}
       </Card>

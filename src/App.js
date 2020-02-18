@@ -10,6 +10,11 @@ import "./App.css";
 
 class App extends React.Component {
   state = {
+    details: [
+      {
+        class: "name of class"
+      }
+    ],
     modules: [
       {
         module: 1,

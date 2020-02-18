@@ -7,6 +7,13 @@
   line-height: 40px;
 }
 
+.title:hover {
+  background-color: rgb(214, 233, 255);
+  transition-property: background-color;
+  transition-timing-function: ease;
+  transition-duration: .2s;
+}
+
 .lesson-list:hover {
   background-color: rgb(214, 233, 255);
   transition-property: background-color;
