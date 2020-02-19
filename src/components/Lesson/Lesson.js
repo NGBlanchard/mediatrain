@@ -1,6 +1,5 @@
 import React from "react";
 import Submission from "../Submission/Submission";
-
 import ModulesContext from "../ModulesContext";
 
 import "./Lesson.css";
@@ -18,13 +17,14 @@ class Lesson extends React.Component {
     const { lessonId } = this.props.match.params;
     const lessonIdNumber = parseInt(lessonId);
     const lesson = lessons.find(lesson => lesson.id === lessonIdNumber);
+    
     return (
       <>
         <main className="lesson-main">
           <header className="lesson-header">{lesson.name}</header>
           <section>{lesson.content}</section>
         </main>
-        <Submission />
+        <Submission lesson={lessonId}/>
       </>
     );
   }

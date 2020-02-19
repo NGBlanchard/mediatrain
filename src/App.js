@@ -12,7 +12,7 @@ import "./App.css";
 class App extends React.Component {
   state = {
     details: {
-      class: "name of class",
+      class: "American Lit",
       teacher: "Thomas Pynchon",
       progress: 80
     },
@@ -36,6 +36,8 @@ class App extends React.Component {
         number: 1.1,
         name: "Testing lesson 1.1",
         unitid: 11,
+        objective: "",
+        video: "",
         content:
           "This course presents a historical overview of the American literary tradition. Students will be exposed to American culture, heritage, and history through the study of American literature, to develop and apply effective communication skills through speaking and active listening in small and large groups, and to continue advancement towards refined writing skills."
       },
@@ -43,6 +45,8 @@ class App extends React.Component {
         id: 2,
         number: 1.2,
         name: "Testing lesson 1.2",
+        objective: "",
+        video: "",
         unitid: 11,
         content: "lorem ipsum"
       },
@@ -50,6 +54,8 @@ class App extends React.Component {
         id: 3,
         number: 1.3,
         name: "Testing lesson 1.3",
+        objective: "",
+        video: "",
         unitid: 11,
         content: "lorem ipsum"
       },
@@ -57,6 +63,8 @@ class App extends React.Component {
         id: 4,
         number: 2.1,
         name: "Testing lesson 2.1",
+        objective: "",
+        video: "",
         unitid: 12,
         content: "lorem ipsum"
       },
@@ -64,6 +72,8 @@ class App extends React.Component {
         id: 5,
         number: 2.2,
         name: "Testing lesson 2.2",
+        objective: "",
+        video: "",
         unitid: 12,
         content: "lorem ipsum"
       },
@@ -71,6 +81,8 @@ class App extends React.Component {
         id: 6,
         number: 2.3,
         name: "Testing lesson 2.3",
+        objective: "",
+        video: "",
         unitid: 12,
         content: "lorem ipsum"
       },
@@ -78,6 +90,8 @@ class App extends React.Component {
         id: 7,
         number: 3.1,
         name: "Testing lesson 3.1",
+        objective: "",
+        video: "",
         unitid: 13,
         content: "lorem ipsum"
       },
@@ -85,6 +99,8 @@ class App extends React.Component {
         id: 8,
         number: 3.2,
         name: "Testing lesson 3.2",
+        objective: "",
+        video: "",
         unitid: 13,
         content: "lorem ipsum"
       },
@@ -92,6 +108,8 @@ class App extends React.Component {
         id: 9,
         number: 3.3,
         name: "Testing lesson 3.3",
+        objective: "",
+        video: "",
         unitid: 13,
         content: "lorem ipsum"
       },
@@ -99,6 +117,8 @@ class App extends React.Component {
         id: 10,
         number: 3.4,
         name: "Testing lesson 3.4",
+        objective: "",
+        video: "",
         unitid: 13,
         content: "lorem ipsum"
       }
