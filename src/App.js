@@ -31,16 +31,16 @@ class App extends React.Component {
       }
     ],
     lessons: [
-      { id: 1, number: 1.1, name: "testing lesson 1.1", unitid: 11 },
-      { id: 2, number: 1.2, name: "testing lesson 1.2", unitid: 11 },
-      { id: 3, number: 1.3, name: "testing lesson 1.3", unitid: 11 },
-      { id: 4, number: 2.1, name: "testing lesson 2.1", unitid: 12 },
-      { id: 5, number: 2.2, name: "testing lesson 2.2", unitid: 12 },
-      { id: 6, number: 2.3, name: "testing lesson 2.3", unitid: 12 },
-      { id: 7, number: 3.1, name: "testing lesson 3.1", unitid: 13 },
-      { id: 8, number: 3.2, name: "testing lesson 3.2", unitid: 13 },
-      { id: 9, number: 3.3, name: "testing lesson 3.3", unitid: 13 },
-      { id: 10, number: 3.4, name: "testing lesson 3.4", unitid: 13 }
+      { id: 1, number: 1.1, name: "testing lesson 1.1", unitid: 11, content: "lorem ipsum" },
+      { id: 2, number: 1.2, name: "testing lesson 1.2", unitid: 11, content: "lorem ipsum" },
+      { id: 3, number: 1.3, name: "testing lesson 1.3", unitid: 11, content: "lorem ipsum" },
+      { id: 4, number: 2.1, name: "testing lesson 2.1", unitid: 12, content: "lorem ipsum" },
+      { id: 5, number: 2.2, name: "testing lesson 2.2", unitid: 12, content: "lorem ipsum" },
+      { id: 6, number: 2.3, name: "testing lesson 2.3", unitid: 12, content: "lorem ipsum" },
+      { id: 7, number: 3.1, name: "testing lesson 3.1", unitid: 13, content: "lorem ipsum" },
+      { id: 8, number: 3.2, name: "testing lesson 3.2", unitid: 13, content: "lorem ipsum" },
+      { id: 9, number: 3.3, name: "testing lesson 3.3", unitid: 13, content: "lorem ipsum" },
+      { id: 10, number: 3.4, name: "testing lesson 3.4", unitid: 13, content: "lorem ipsum" }
     ]
   };
 
