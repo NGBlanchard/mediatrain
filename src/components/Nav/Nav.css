@@ -1,7 +1,9 @@
 .nav {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
-  display:flex;
+  display: flex;
+  border-bottom: .5px solid lightgray;
+  height: 50px;
 }
 
 h1 {

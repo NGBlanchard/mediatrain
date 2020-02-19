@@ -1,5 +1,6 @@
 import React from "react";
-import { findContent } from '../../helpers'
+import Submission from "../Submission/Submission";
+
 import ModulesContext from "../ModulesContext";
 
 import "./Lesson.css";
@@ -12,23 +13,20 @@ class Lesson extends React.Component {
   };
   static contextType = ModulesContext;
 
-  
-
   render() {
-    const { lessons=[] } = this.context
-    const { lessonId } = this.props.match.params
-    const lessonIdNumber = parseInt(lessonId)
-    const lesson = lessons.find(lesson => lesson.id === lessonIdNumber)
+    const { lessons = [] } = this.context;
+    const { lessonId } = this.props.match.params;
+    const lessonIdNumber = parseInt(lessonId);
+    const lesson = lessons.find(lesson => lesson.id === lessonIdNumber);
     return (
       <>
-      <section className="lesson-header">
-        Lesson # {lessonId}
-      </section>
-      <section>
-        {lesson.content}
-      </section>
+        <main className="lesson-main">
+          <header className="lesson-header">{lesson.name}</header>
+          <section>{lesson.content}</section>
+        </main>
+        <Submission />
       </>
-    )
+    );
   }
 }
 

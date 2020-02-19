@@ -1,0 +1,17 @@
+.submission {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 18px;
+  padding: 20px;
+  background-color: rgb(247, 247, 247);
+}
+
+.work-button {
+  font-size: 18px;;
+}
+
+.submission-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}

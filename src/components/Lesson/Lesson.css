@@ -1,0 +1,14 @@
+.lesson-main {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 18px;
+  padding: 20px;
+  background-color: rgb(250, 250, 250);
+}
+
+.lesson-header {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  margin-top:50px;
+  margin-bottom: 50px;
+}
