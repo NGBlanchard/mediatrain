@@ -10,13 +10,14 @@ class Modules extends React.Component {
   static contextType = ModulesContext;
 
   render() {
-    const { modules } = this.context
-    const renderedList = modules.map(module => {
+    const { units, lessons } = this.context
+    const renderedList = units.map(unit => {
       return (
         <DashCard
-          number={module.module}
-          lessons={module.lessons}
-          key={module.module}
+          unit={unit}
+          number={unit.unitid}
+          lessons={lessons}
+          key={unit.unitid}
         />
       );
     });

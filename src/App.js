@@ -4,80 +4,55 @@ import ModulesContext from "./components/ModulesContext";
 import Login from "./components/Login/Login";
 import Nav from "./components/Nav/Nav";
 import Dashboard from "./components/Dashboard/Dashboard";
+import Lesson from "./components/Lesson/Lesson";
 import Messages from "./components/Messages/Messages";
-
+import UnitList from "./components/UnitList/UnitList";
+import { findLesson, getLessonsForUnit } from "./helpers";
 import "./App.css";
 
 class App extends React.Component {
   state = {
-    details: [
+    details: {
+      class: "name of class",
+      progress: 80
+    },
+    units: [
       {
-        class: "name of class"
+        unitid: 11,
+        unitname: "The Great Gatsby"
+      },
+      {
+        unitid: 12,
+        unitname: "Our Town"
+      },
+      {
+        unitid: 13,
+        unitname: "Sula"
       }
     ],
-    modules: [
-      {
-        module: 1,
-        lessons: [
-          {
-            number: 1.1,
-            name: "testing lesson 1"
-          },
-          {
-            number: 1.2,
-            name: "testing lesson 2"
-          },
-          {
-            number: 1.3,
-            name: "testing lesson 3"
-          }
-        ]
-      },
-      {
-        module: 2,
-        lessons: [
-          {
-            number: 2.1,
-            name: "testing lesson 1"
-          },
-          {
-            number: 2.2,
-            name: "testing lesson 2"
-          },
-          {
-            number: 2.3,
-            name: "testing lesson 3"
-          }
-        ]
-      },
-      {
-        module: 3,
-        lessons: [
-          {
-            number: 3.1,
-            name: "testing lesson 1"
-          },
-          {
-            number: 3.2,
-            name: "testing lesson 2"
-          },
-          {
-            number: 3.3,
-            name: "testing lesson 3"
-          },
-          {
-            number: 3.4,
-            name: "testing lesson 4"
-          }
-        ]
-      }
+    lessons: [
+      { id: 1, number: 1.1, name: "testing lesson 1.1", unitid: 11 },
+      { id: 2, number: 1.2, name: "testing lesson 1.2", unitid: 11 },
+      { id: 3, number: 1.3, name: "testing lesson 1.3", unitid: 11 },
+      { id: 4, number: 2.1, name: "testing lesson 2.1", unitid: 12 },
+      { id: 5, number: 2.2, name: "testing lesson 2.2", unitid: 12 },
+      { id: 6, number: 2.3, name: "testing lesson 2.3", unitid: 12 },
+      { id: 7, number: 3.1, name: "testing lesson 3.1", unitid: 13 },
+      { id: 8, number: 3.2, name: "testing lesson 3.2", unitid: 13 },
+      { id: 9, number: 3.3, name: "testing lesson 3.3", unitid: 13 },
+      { id: 10, number: 3.4, name: "testing lesson 3.4", unitid: 13 }
     ]
   };
 
+
+
   render() {
     const contextValue = {
-      modules: this.state.modules
+      lessons: this.state.lessons,
+      units: this.state.units,
+      details: this.state.details
     };
+    const { lessons } = this.state;
     return (
       <>
         <div className="App">
@@ -87,6 +62,14 @@ class App extends React.Component {
               <Route exact path={"/"} component={Login} />
               <Route exact path={"/dashboard"} component={Dashboard} />
               <Route exact path={"/messages"} component={Messages} />
+              <Route
+                path="/lesson/:lessonId"
+                render={routeProps => {
+                  const { lessonId } = routeProps.match.params;
+                  const lesson = findLesson(lessons, lessonId);
+                  return <Lesson {...routeProps} lesson={lesson} />;
+                }}
+              />
             </Switch>
           </ModulesContext.Provider>
         </div>

@@ -2,11 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
+import { getLessonsForUnit } from '../../helpers'
 import "./DashCard.css";
 
 class DashCard extends React.Component {
+  
+  
+  
   render() {
-    const renderedLessons = this.props.lessons.map(lesson => {
+    const lessonsForUnit = getLessonsForUnit(this.props.lessons, this.props.number)
+    const renderedLessons = lessonsForUnit.map(lesson => {
       return (
         <Accordion.Collapse eventKey={this.props.number} key={lesson.number}>
           <Link to={`/lesson/${lesson.id}`} className="lesson-text">
@@ -21,7 +26,7 @@ class DashCard extends React.Component {
     return (
       <Card className="module-title">
         <Accordion.Toggle as={Card.Header} eventKey={this.props.number} className="title">
-          Name of Unit {this.props.number}
+          {this.props.unit.unitname}
         </Accordion.Toggle>
         {renderedLessons}
       </Card>

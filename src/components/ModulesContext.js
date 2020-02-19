@@ -2,7 +2,9 @@ import React from 'react'
 
 
 const ModulesContext = React.createContext({
-  modules: [],
+  details: [],
+  units: [],
+  lessons: [],
 })
 
 export default ModulesContext
