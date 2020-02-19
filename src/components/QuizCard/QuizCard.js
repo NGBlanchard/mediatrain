@@ -2,103 +2,40 @@ import React from 'react';
 import BoxScore from './quiz/BoxScore.js';
 import QuestionList from './quiz/QuestionList.js';
 import Results from './quiz/Results.js';
+import ModulesContext from "../ModulesContext";
 
 class QuizCard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      questions: [
-        {
-          id: 1,
-          text: 'What does JSON stand for',
-          choices: [
-            {
-              id: 'a',
-              text: 'JavaScript Oriented Notation',
-            },
-            {
-              id: 'b',
-              text: 'JavaScript Object Notation',
-            },
-            {
-              id: 'c',
-              text: 'JavaScript Organic Notation',
-            }
-          ],
-          correct: 'b'
-        },
-        {
-          id: 2,
-          text: 'Which company mantains ReactJS',
-          choices: [
-            {
-              id: 'a',
-              text: 'Google',
-            },
-            {
-              id: 'b',
-              text: 'Facebook',
-            },
-            {
-              id: 'c',
-              text: 'Airbnb',
-            }
-          ],
-          correct: 'b'
-        },
-        {
-          id: 3,
-          text: 'Is it an antipattern to include props in the getInitialState method of a component?',
-          choices: [
-            {
-              id: 'a',
-              text: 'Yes',
-            },
-            {
-              id: 'b',
-              text: 'No',
-            },
-          ],
-          correct: 'a'
-        },
-        {
-          id: 4,
-          text: 'Is ReactJS a framework by itself?',
-          choices: [
-            {
-              id: 'a',
-              text: 'Yes',
-            },
-            {
-              id: 'b',
-              text: 'No',
-            },
-          ],
-          correct: 'b'
-        }
-      ],
-      score: 0,
-      current: 1
+  state = {
+    results: null,
+  }
+  static defaultProps = {
+    match: {
+      params: {}
     }
-  }
-  setCurrent(current) {
-    this.setState({current});
-  }
-  setScore(score) {
-    this.setState({score});
-  }
+  };
+
+  static contextType = ModulesContext;
+
+
+
+  // setCurrent(current) {
+  //   this.setState({current});
+  // }
+  // setScore(score) {
+  //   this.setState({score});
+  // }
   render() {
-    if (this.state.current > this.state.questions.length) {
+    if (this.context.current > this.context.questions.length) {
       var boxscore = '';
-      var results = <Results {...this.state}/>
+      var results = <Results {...this.context}/>
     } else {
-      var boxscore = <BoxScore {...this.state} />
+      var boxscore = <BoxScore {...this.context} />
       var results = '';
     }
     return (
       <div>
         {boxscore}
-        <QuestionList setScore={this.setScore.bind(this)} setCurrent={this.setCurrent.bind(this)} {...this.state}/>
+        <QuestionList setScore={this.context.setScore.bind(this)} setCurrent={this.context.setCurrent.bind(this)} {...this.context}/>
         {results}
       </div>
     );

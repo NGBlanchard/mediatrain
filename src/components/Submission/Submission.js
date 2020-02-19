@@ -21,13 +21,6 @@ class Submission extends React.Component {
 
     }
 
-    // const renderCustomResultPage = (obj) => {
-    //   return (
-    //     <div>
-    //       You earned {obj.numberOfCorrectAnswers} out of {obj.numberOfQuestions}
-    //     </div>
-    //   )
-    // }
 
     const id = this.props.lesson;
     const quiz = quizzes[id];
@@ -35,9 +28,6 @@ class Submission extends React.Component {
       <>
         <h2 className="submission-header">Checkpoint</h2>
         <QuizCard quiz={quiz} onComplete={onCompleteAction}/>
-        {/* <Button variant="outline-secondary" size="lg" className="work-button">
-          Submit your work
-        </Button> */}
       </>
     );
   }
