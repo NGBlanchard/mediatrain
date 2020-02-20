@@ -6,7 +6,7 @@ import Nav from "./components/Nav/Nav";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Lesson from "./components/Lesson/Lesson";
 import Messages from "./components/Messages/Messages";
-import { findLesson } from "./helpers";
+import { findLesson, getLessonForQuiz } from "./helpers";
 import "./App.css";
 
 class App extends React.Component {
@@ -40,80 +40,80 @@ class App extends React.Component {
         video: "",
         content:
           "This course presents a historical overview of the American literary tradition. Students will be exposed to American culture, heritage, and history through the study of American literature, to develop and apply effective communication skills through speaking and active listening in small and large groups, and to continue advancement towards refined writing skills.",
-          questions: [
-            {
-              id: 1,
-              text: "What does JSON stand for",
-              choices: [
-                {
-                  id: "a",
-                  text: "JavaScript Oriented Notation"
-                },
-                {
-                  id: "b",
-                  text: "JavaScript Object Notation"
-                },
-                {
-                  id: "c",
-                  text: "JavaScript Organic Notation"
-                }
-              ],
-              correct: "b"
-            },
-            {
-              id: 2,
-              text: "Which company mantains ReactJS",
-              choices: [
-                {
-                  id: "a",
-                  text: "Google"
-                },
-                {
-                  id: "b",
-                  text: "Facebook"
-                },
-                {
-                  id: "c",
-                  text: "Airbnb"
-                }
-              ],
-              correct: "b"
-            },
-            {
-              id: 3,
-              text:
-                "Is it an antipattern to include props in the getInitialState method of a component?",
-              choices: [
-                {
-                  id: "a",
-                  text: "Yes"
-                },
-                {
-                  id: "b",
-                  text: "No"
-                }
-              ],
-              correct: "a"
-            },
-            {
-              id: 4,
-              text: "Is ReactJS a framework by itself?",
-              choices: [
-                {
-                  id: "a",
-                  text: "Yes"
-                },
-                {
-                  id: "b",
-                  text: "No"
-                }
-              ],
-              correct: "b"
-            }
-          ],
-          score: 0,
-          current: 1
-        },
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ],
+        score: 0,
+        current: 1
+      },
       {
         id: 2,
         number: 1.2,
@@ -852,15 +852,25 @@ class App extends React.Component {
         score: 0,
         current: 1
       }
-    ],
-      
+    ]
   };
 
-  setCurrent = current => {
-    this.setState({ current });
+  setCurrent = (current, lesson) => {
+    const index = getLessonForQuiz(this.state.lessons, lesson);
+    let lessons = { ...this.state.lessons };
+    lessons[index].current = current;
+    this.setState({
+      lessons
+    });
   };
-  setScore = score => {
-    this.setState({ score });
+
+  setScore = (score, lesson) => {
+    const index = getLessonForQuiz(this.state.lessons, lesson);
+    let lessons = { ...this.state.lessons };
+    lessons[index].score = score;
+    this.setState({
+      lessons
+    });
   };
 
   render() {
@@ -871,7 +881,7 @@ class App extends React.Component {
       questions: this.state.questions,
       quizzes: this.state.quizzes,
       setCurrent: this.setCurrent,
-      setScore: this.setScore,
+      setScore: this.setScore
     };
     const { lessons } = this.state;
     return (

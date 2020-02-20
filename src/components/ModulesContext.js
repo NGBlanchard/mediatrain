@@ -9,8 +9,6 @@ const ModulesContext = React.createContext({
   quizzes: [],
   setCurrent: () => {},
   setScore: () => {},
-  score: 0,
-  current: 1
 })
 
 export default ModulesContext

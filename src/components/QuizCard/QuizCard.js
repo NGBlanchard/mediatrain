@@ -29,8 +29,6 @@ class QuizCard extends React.Component {
         <QuestionList
           id={id}
           lesson={this.props.lesson}
-          setScore={this.context.setScore.bind(this)}
-          setCurrent={this.context.setCurrent.bind(this)}
           {...this.props.lesson}
         />
         {results}
