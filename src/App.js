@@ -39,8 +39,81 @@ class App extends React.Component {
         objective: "",
         video: "",
         content:
-          "This course presents a historical overview of the American literary tradition. Students will be exposed to American culture, heritage, and history through the study of American literature, to develop and apply effective communication skills through speaking and active listening in small and large groups, and to continue advancement towards refined writing skills."
-      },
+          "This course presents a historical overview of the American literary tradition. Students will be exposed to American culture, heritage, and history through the study of American literature, to develop and apply effective communication skills through speaking and active listening in small and large groups, and to continue advancement towards refined writing skills.",
+          questions: [
+            {
+              id: 1,
+              text: "What does JSON stand for",
+              choices: [
+                {
+                  id: "a",
+                  text: "JavaScript Oriented Notation"
+                },
+                {
+                  id: "b",
+                  text: "JavaScript Object Notation"
+                },
+                {
+                  id: "c",
+                  text: "JavaScript Organic Notation"
+                }
+              ],
+              correct: "b"
+            },
+            {
+              id: 2,
+              text: "Which company mantains ReactJS",
+              choices: [
+                {
+                  id: "a",
+                  text: "Google"
+                },
+                {
+                  id: "b",
+                  text: "Facebook"
+                },
+                {
+                  id: "c",
+                  text: "Airbnb"
+                }
+              ],
+              correct: "b"
+            },
+            {
+              id: 3,
+              text:
+                "Is it an antipattern to include props in the getInitialState method of a component?",
+              choices: [
+                {
+                  id: "a",
+                  text: "Yes"
+                },
+                {
+                  id: "b",
+                  text: "No"
+                }
+              ],
+              correct: "a"
+            },
+            {
+              id: 4,
+              text: "Is ReactJS a framework by itself?",
+              choices: [
+                {
+                  id: "a",
+                  text: "Yes"
+                },
+                {
+                  id: "b",
+                  text: "No"
+                }
+              ],
+              correct: "b"
+            }
+          ],
+          score: 0,
+          current: 1
+        },
       {
         id: 2,
         number: 1.2,
@@ -48,7 +121,80 @@ class App extends React.Component {
         objective: "",
         video: "",
         unitid: 11,
-        content: "lorem ipsum"
+        content: "lorem ipsum",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ],
+        score: 0,
+        current: 1
       },
       {
         id: 3,
@@ -57,7 +203,80 @@ class App extends React.Component {
         objective: "",
         video: "",
         unitid: 11,
-        content: "lorem ipsum"
+        content: "lorem ipsum",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ],
+        score: 0,
+        current: 1
       },
       {
         id: 4,
@@ -66,7 +285,80 @@ class App extends React.Component {
         objective: "",
         video: "",
         unitid: 12,
-        content: "lorem ipsum"
+        content: "lorem ipsum",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ],
+        score: 0,
+        current: 1
       },
       {
         id: 5,
@@ -75,7 +367,80 @@ class App extends React.Component {
         objective: "",
         video: "",
         unitid: 12,
-        content: "lorem ipsum"
+        content: "lorem ipsum",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ],
+        score: 0,
+        current: 1
       },
       {
         id: 6,
@@ -84,7 +449,80 @@ class App extends React.Component {
         objective: "",
         video: "",
         unitid: 12,
-        content: "lorem ipsum"
+        content: "lorem ipsum",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ],
+        score: 0,
+        current: 1
       },
       {
         id: 7,
@@ -93,7 +531,80 @@ class App extends React.Component {
         objective: "",
         video: "",
         unitid: 13,
-        content: "lorem ipsum"
+        content: "lorem ipsum",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ],
+        score: 0,
+        current: 1
       },
       {
         id: 8,
@@ -102,7 +613,80 @@ class App extends React.Component {
         objective: "",
         video: "",
         unitid: 13,
-        content: "lorem ipsum"
+        content: "lorem ipsum",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ],
+        score: 0,
+        current: 1
       },
       {
         id: 9,
@@ -111,7 +695,80 @@ class App extends React.Component {
         objective: "",
         video: "",
         unitid: 13,
-        content: "lorem ipsum"
+        content: "lorem ipsum",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ],
+        score: 0,
+        current: 1
       },
       {
         id: 10,
@@ -120,89 +777,91 @@ class App extends React.Component {
         objective: "",
         video: "",
         unitid: 13,
-        content: "lorem ipsum"
-      }
-    ],
-    questions: [
-      {
-        id: 1,
-        text: 'What does JSON stand for',
-        choices: [
+        content: "lorem ipsum",
+        questions: [
           {
-            id: 'a',
-            text: 'JavaScript Oriented Notation',
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
           },
           {
-            id: 'b',
-            text: 'JavaScript Object Notation',
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
           },
           {
-            id: 'c',
-            text: 'JavaScript Organic Notation',
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
           }
         ],
-        correct: 'b'
-      },
-      {
-        id: 2,
-        text: 'Which company mantains ReactJS',
-        choices: [
-          {
-            id: 'a',
-            text: 'Google',
-          },
-          {
-            id: 'b',
-            text: 'Facebook',
-          },
-          {
-            id: 'c',
-            text: 'Airbnb',
-          }
-        ],
-        correct: 'b'
-      },
-      {
-        id: 3,
-        text: 'Is it an antipattern to include props in the getInitialState method of a component?',
-        choices: [
-          {
-            id: 'a',
-            text: 'Yes',
-          },
-          {
-            id: 'b',
-            text: 'No',
-          },
-        ],
-        correct: 'a'
-      },
-      {
-        id: 4,
-        text: 'Is ReactJS a framework by itself?',
-        choices: [
-          {
-            id: 'a',
-            text: 'Yes',
-          },
-          {
-            id: 'b',
-            text: 'No',
-          },
-        ],
-        correct: 'b'
+        score: 0,
+        current: 1
       }
     ],
-    score: 0,
-    current: 1
-  }
-  
-  setCurrent = (current) => {
-    this.setState({current});
-  }
-  setScore = (score) => {
-    this.setState({score});
-  }
+      
+  };
+
+  setCurrent = current => {
+    this.setState({ current });
+  };
+  setScore = score => {
+    this.setState({ score });
+  };
 
   render() {
     const contextValue = {
@@ -210,10 +869,9 @@ class App extends React.Component {
       units: this.state.units,
       details: this.state.details,
       questions: this.state.questions,
+      quizzes: this.state.quizzes,
       setCurrent: this.setCurrent,
       setScore: this.setScore,
-      score: this.state.score,
-      current: this.state.current,
     };
     const { lessons } = this.state;
     return (

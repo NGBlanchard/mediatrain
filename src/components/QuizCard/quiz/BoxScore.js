@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 class BoxScore extends React.Component {
   render() {
-    return(
+    return (
       <div className="well">
         Question {this.props.current} out of {this.props.questions.length}
       </div>

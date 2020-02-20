@@ -3,7 +3,8 @@ import Button from "react-bootstrap/Button";
 
 class Question extends React.Component {
   handleChange(e) {
-    const { setCurrent, setScore, question } = this.props;
+    const { setCurrent, setScore } = this.context;
+    const { question } = this.props;
     e.preventDefault();
     const selected = e.target.value;
     setCurrent(this.props.current + 1);
@@ -12,6 +13,7 @@ class Question extends React.Component {
     }
   }
   render() {
+    console.log(this.props)
     const { question } = this.props;
     return (
       <div className="well">

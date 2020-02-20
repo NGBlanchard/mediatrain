@@ -24,7 +24,7 @@ class Lesson extends React.Component {
           <header className="lesson-header">{lesson.name}</header>
           <section>{lesson.content}</section>
         </main>
-        <Submission lesson={lessonId}/>
+        <Submission lesson={lesson} />
       </>
     );
   }

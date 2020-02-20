@@ -6,10 +6,11 @@ const ModulesContext = React.createContext({
   units: [],
   lessons: [],
   questions: [],
+  quizzes: [],
   setCurrent: () => {},
   setScore: () => {},
-  score: null,
-  current: null
+  score: 0,
+  current: 1
 })
 
 export default ModulesContext
