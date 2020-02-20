@@ -43,76 +43,76 @@ class App extends React.Component {
         questions: [
           {
             id: 1,
-            text: "What does JSON stand for",
+            text: "The answer is B",
             choices: [
               {
                 id: "a",
-                text: "JavaScript Oriented Notation"
+                text: "This is A"
               },
               {
                 id: "b",
-                text: "JavaScript Object Notation"
+                text: "This is B"
               },
               {
                 id: "c",
-                text: "JavaScript Organic Notation"
+                text: "This is C"
               }
             ],
             correct: "b"
           },
           {
             id: 2,
-            text: "Which company mantains ReactJS",
+            text: "The answer is A",
             choices: [
               {
                 id: "a",
-                text: "Google"
+                text: "This is A"
               },
               {
                 id: "b",
-                text: "Facebook"
+                text: "This is B"
               },
               {
                 id: "c",
-                text: "Airbnb"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 3,
-            text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
+                text: "This is C"
               }
             ],
             correct: "a"
           },
           {
-            id: 4,
-            text: "Is ReactJS a framework by itself?",
+            id: 3,
+            text:
+              "The answer is B",
             choices: [
               {
                 id: "a",
-                text: "Yes"
+                text: "This is A"
               },
               {
                 id: "b",
-                text: "No"
+                text: "This is B"
               }
             ],
             correct: "b"
+          },
+          {
+            id: 4,
+            text: "The answer is A",
+            choices: [
+              {
+                id: "a",
+                text: "This is A"
+              },
+              {
+                id: "b",
+                text: "This is B"
+              }
+            ],
+            correct: "a"
           }
         ],
-        score: 0,
-        current: 1
+        // score: 0,
+        // current: 1
       },
       {
         id: 2,
@@ -193,8 +193,8 @@ class App extends React.Component {
             correct: "b"
           }
         ],
-        score: 0,
-        current: 1
+        // score: 0,
+        // current: 1
       },
       {
         id: 3,
@@ -275,8 +275,8 @@ class App extends React.Component {
             correct: "b"
           }
         ],
-        score: 0,
-        current: 1
+        // score: 0,
+        // current: 1
       },
       {
         id: 4,
@@ -357,8 +357,8 @@ class App extends React.Component {
             correct: "b"
           }
         ],
-        score: 0,
-        current: 1
+        // score: 0,
+        // current: 1
       },
       {
         id: 5,
@@ -439,8 +439,8 @@ class App extends React.Component {
             correct: "b"
           }
         ],
-        score: 0,
-        current: 1
+        // score: 0,
+        // current: 1
       },
       {
         id: 6,
@@ -521,8 +521,8 @@ class App extends React.Component {
             correct: "b"
           }
         ],
-        score: 0,
-        current: 1
+        // score: 0,
+        // current: 1
       },
       {
         id: 7,
@@ -603,8 +603,8 @@ class App extends React.Component {
             correct: "b"
           }
         ],
-        score: 0,
-        current: 1
+        // score: 0,
+        // current: 1
       },
       {
         id: 8,
@@ -685,8 +685,8 @@ class App extends React.Component {
             correct: "b"
           }
         ],
-        score: 0,
-        current: 1
+        // score: 0,
+        // current: 1
       },
       {
         id: 9,
@@ -767,8 +767,8 @@ class App extends React.Component {
             correct: "b"
           }
         ],
-        score: 0,
-        current: 1
+        // score: 0,
+        // current: 1
       },
       {
         id: 10,
@@ -849,29 +849,29 @@ class App extends React.Component {
             correct: "b"
           }
         ],
-        score: 0,
-        current: 1
+        // score: 0,
+        // current: 1
       }
     ]
   };
 
-  setCurrent = (current, lesson) => {
-    const index = getLessonForQuiz(this.state.lessons, lesson);
-    let lessons = { ...this.state.lessons };
-    lessons[index].current = current;
-    this.setState({
-      lessons
-    });
-  };
+  // setCurrent = (current, lesson) => {
+  //   const index = getLessonForQuiz(this.state.lessons, lesson);
+  //   let lessons = { ...this.state.lessons };
+  //   lessons[index].current = current;
+  //   this.setState({
+  //     lessons
+  //   });
+  // };
 
-  setScore = (score, lesson) => {
-    const index = getLessonForQuiz(this.state.lessons, lesson);
-    let lessons = { ...this.state.lessons };
-    lessons[index].score = score;
-    this.setState({
-      lessons
-    });
-  };
+  // setScore = (score, lesson) => {
+  //   const index = getLessonForQuiz(this.state.lessons, lesson);
+  //   let lessons = { ...this.state.lessons };
+  //   lessons[index].score = score;
+  //   this.setState({
+  //     lessons
+  //   });
+  // };
 
   render() {
     const contextValue = {
@@ -880,8 +880,8 @@ class App extends React.Component {
       details: this.state.details,
       questions: this.state.questions,
       quizzes: this.state.quizzes,
-      setCurrent: this.setCurrent,
-      setScore: this.setScore
+      // setCurrent: this.setCurrent,
+      // setScore: this.setScore
     };
     const { lessons } = this.state;
     return (

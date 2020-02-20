@@ -18,7 +18,7 @@ class Results extends React.Component {
         <h2>
           {percent}% - {message}
         </h2>
-        <a className="btn btn-primary" href="">
+        <a className="btn btn-primary">
           Take test again
         </a>
       </div>

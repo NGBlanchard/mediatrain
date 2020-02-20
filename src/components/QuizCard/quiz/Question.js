@@ -15,25 +15,25 @@ class Question extends React.Component {
   }
   static contextType = ModulesContext;
 
-  // handleChange(event) {
-  //   this.setState({value: event.target.value});
-  // }
+  handleChange = (event) => {
+    this.setState({value: event.target.value});
+  }
 
-  handleChange(e) {
-    const { setCurrent, setScore } = this.context;
+  handleSubmit = (e) => {
+    // const { setCurrent, setScore } = this.props;
     const { question } = this.props;
     const lesson = this.props.lesson.id
     e.preventDefault();
-    const selected = e.target.value;
-    setCurrent(this.props.current + 1, lesson);
+    const selected = this.state.value;
+    this.props.setCurrent(this.props.current + 1, lesson);
     if (selected === question.correct) {
-      setScore(this.props.score + 1, lesson);
+      this.props.setScore(this.props.score + 1, lesson);
     }
   }
   render() {
     const { question } = this.props;
     return (
-      <form onSubmit={this.handleSubmit} className="question-form">
+      <form className="question-form">
         <h3>{question.text}</h3>
         <hr />
         <ul className="list-group">
@@ -42,7 +42,7 @@ class Question extends React.Component {
               <li className="list-group-item" key={choice.id}>
                 {choice.id}
                 <input
-                  onChange={this.handleChange.bind(this)}
+                  onChange={this.handleChange}
                   type="radio"
                   name={question.id}
                   value={choice.id}
@@ -52,14 +52,15 @@ class Question extends React.Component {
             );
           })}
         </ul>
-        {/* <Button
+        <Button
+          type="submit"
           variant="outline-secondary"
           size="lg"
-          className="work-button"
-          onClick={this.handleChange.bind(this)}
+          className="submit-button"
+          onClick={this.handleSubmit.bind(this)}
         >
           Submit
-        </Button> */}
+        </Button>
       </form>
     );
   }

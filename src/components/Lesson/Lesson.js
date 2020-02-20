@@ -17,7 +17,7 @@ class Lesson extends React.Component {
     const { lessonId } = this.props.match.params;
     const lessonIdNumber = parseInt(lessonId);
     const lesson = lessons.find(lesson => lesson.id === lessonIdNumber);
-    
+
     return (
       <>
         <main className="lesson-main">

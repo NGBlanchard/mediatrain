@@ -3,9 +3,6 @@ import QuizCard from "../QuizCard/QuizCard";
 import "./Submission.css";
 
 class Submission extends React.Component {
-  state = {
-    results: null
-  };
 
   static defaultProps = {
     match: {
@@ -17,7 +14,7 @@ class Submission extends React.Component {
     return (
       <>
         <h2 className="submission-header">Checkpoint</h2>
-        <QuizCard lesson={this.props.lesson} />
+        <QuizCard lesson={this.props.lesson}/>
       </>
     );
   }
