@@ -22,9 +22,9 @@ class Lesson extends React.Component {
       <>
         <main className="lesson-main">
           <header className="lesson-header">{lesson.name}</header>
-          <section>{lesson.content}</section>
-        </main>
+          <section className="lesson-content">{lesson.content}</section>
         <Submission lesson={lesson} />
+        </main>
       </>
     );
   }

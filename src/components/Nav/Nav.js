@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Dashboard from "../../images/dashboard.png";
+import Messages from "../../images/messages.png";
+
 
 import ModulesContext from "../ModulesContext";
 
@@ -21,10 +24,12 @@ export default class Nav extends Component {
         <h1>
           {details.class}
         </h1>
+        <div className="nav-icons">
         <h2>
-        <Link to="/dashboard">Dashboard</Link>
-        <Link to="/messages">Messages</Link>
+        <Link to="/dashboard"><img src={Dashboard} className="icon" alt="dashboard logo"></img></Link>
+        <Link to="/messages"><img src={Messages} className="icon" alt="messages logo"></img></Link>
         </h2>
+        </div>
       </nav>
     );
   }

@@ -1,0 +1,17 @@
+.results {
+  display: flex;
+  flex-direction: column;
+}
+.submit-button {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.submit-button-container {
+  text-align: center;
+}
+
+.result-button {
+  margin: 0px;
+  margin-bottom: 20px;
+}

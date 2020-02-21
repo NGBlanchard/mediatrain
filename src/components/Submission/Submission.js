@@ -12,10 +12,10 @@ class Submission extends React.Component {
 
   render() {
     return (
-      <>
+      <section className="submission">
         <h2 className="submission-header">Checkpoint</h2>
         <QuizCard lesson={this.props.lesson}/>
-      </>
+      </section>
     );
   }
 }

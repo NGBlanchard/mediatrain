@@ -6,7 +6,7 @@ import Nav from "./components/Nav/Nav";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Lesson from "./components/Lesson/Lesson";
 import Messages from "./components/Messages/Messages";
-import { findLesson, getLessonForQuiz } from "./helpers";
+import { findLesson } from "./helpers";
 import "./App.css";
 
 class App extends React.Component {
@@ -880,8 +880,6 @@ class App extends React.Component {
       details: this.state.details,
       questions: this.state.questions,
       quizzes: this.state.quizzes,
-      // setCurrent: this.setCurrent,
-      // setScore: this.setScore
     };
     const { lessons } = this.state;
     return (
