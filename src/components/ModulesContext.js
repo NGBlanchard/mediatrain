@@ -9,6 +9,7 @@ const ModulesContext = React.createContext({
   quizzes: [],
   setCurrent: () => {},
   setScore: () => {},
+  setProgress: () => {},
 })
 
 export default ModulesContext

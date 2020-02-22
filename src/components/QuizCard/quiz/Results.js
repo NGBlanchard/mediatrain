@@ -1,18 +1,23 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import ModulesContext from "../..//ModulesContext";
+
 
 class Results extends React.Component {
-state = {
-  submitted: false
-}
+  state = {
+    submitted: false
+  };
+
+  static contextType = ModulesContext;
+
 
   handleSubmit = e => {
     //THIS SHOULD POST SCORE TO USER DB
     e.preventDefault();
-   this.setState({
-     submitted: true
-   })
-    console.log(this.props.score)
+    this.setState({
+      submitted: true
+    });
+    this.context.setProgress(this.props.score);
   };
   handleNext = e => {
     const next = this.props.id + 1;
@@ -22,8 +27,9 @@ state = {
 
   handleRetake = e => {
     e.preventDefault();
-    this.props.setCurrent(1)
-  }
+    this.props.setCurrent(1);
+    this.props.setScore(0);
+  };
 
   render() {
     var percent = (this.props.score / this.props.questions.length) * 100;
@@ -47,8 +53,11 @@ state = {
           size="lg"
           className="submit-button"
           onClick={this.handleSubmit.bind(this)}
-        > {this.state.submitted === false ? (
-          'Submit Score to Gradebook') : ('Submitted!')}
+        >
+          {" "}
+          {this.state.submitted === false
+            ? "Submit Score to Gradebook"
+            : "Submitted!"}
         </Button>
         {percent > 60 ? (
           <Button

@@ -15,19 +15,19 @@ class Dashboard extends React.Component {
     const { details } = this.context
     
     return (
-      <>
-        <Welcome />
+      <section className="dashboard">
+        <Welcome class={details.class}/>
         <ProgressBar
           className="progress" 
           animated 
           now={details.progress} 
           label={`${details.progress}%`}
-          striped variant="success"
+          variant="success"
           />
         <Modules 
           className="modules"/>
         <Footer />
-      </>
+      </section>
     );
   }
 }

@@ -6,15 +6,16 @@ import Nav from "./components/Nav/Nav";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Lesson from "./components/Lesson/Lesson";
 import Messages from "./components/Messages/Messages";
+import Syllabus from "./components/Syllabus/Syllabus";
 import { findLesson } from "./helpers";
 import "./App.css";
 
 class App extends React.Component {
   state = {
     details: {
-      class: "American Lit",
-      teacher: "Thomas Pynchon",
-      progress: 80
+      class: "American Literature",
+      teacher: "Nathan Blanchard",
+      progress: 20
     },
     units: [
       {
@@ -81,8 +82,7 @@ class App extends React.Component {
           },
           {
             id: 3,
-            text:
-              "The answer is B",
+            text: "The answer is B",
             choices: [
               {
                 id: "a",
@@ -110,7 +110,7 @@ class App extends React.Component {
             ],
             correct: "a"
           }
-        ],
+        ]
         // score: 0,
         // current: 1
       },
@@ -192,7 +192,7 @@ class App extends React.Component {
             ],
             correct: "b"
           }
-        ],
+        ]
         // score: 0,
         // current: 1
       },
@@ -274,7 +274,7 @@ class App extends React.Component {
             ],
             correct: "b"
           }
-        ],
+        ]
         // score: 0,
         // current: 1
       },
@@ -356,7 +356,7 @@ class App extends React.Component {
             ],
             correct: "b"
           }
-        ],
+        ]
         // score: 0,
         // current: 1
       },
@@ -438,7 +438,7 @@ class App extends React.Component {
             ],
             correct: "b"
           }
-        ],
+        ]
         // score: 0,
         // current: 1
       },
@@ -520,7 +520,7 @@ class App extends React.Component {
             ],
             correct: "b"
           }
-        ],
+        ]
         // score: 0,
         // current: 1
       },
@@ -602,7 +602,7 @@ class App extends React.Component {
             ],
             correct: "b"
           }
-        ],
+        ]
         // score: 0,
         // current: 1
       },
@@ -684,7 +684,7 @@ class App extends React.Component {
             ],
             correct: "b"
           }
-        ],
+        ]
         // score: 0,
         // current: 1
       },
@@ -766,7 +766,7 @@ class App extends React.Component {
             ],
             correct: "b"
           }
-        ],
+        ]
         // score: 0,
         // current: 1
       },
@@ -848,11 +848,19 @@ class App extends React.Component {
             ],
             correct: "b"
           }
-        ],
+        ]
         // score: 0,
         // current: 1
       }
     ]
+  };
+
+  setProgress = score => {
+    let details = { ...this.state.details };
+    details.progress = details.progress + score;
+    this.setState({
+      details
+    });
   };
 
   // setCurrent = (current, lesson) => {
@@ -880,6 +888,7 @@ class App extends React.Component {
       details: this.state.details,
       questions: this.state.questions,
       quizzes: this.state.quizzes,
+      setProgress: this.setProgress
     };
     const { lessons } = this.state;
     return (
@@ -891,6 +900,8 @@ class App extends React.Component {
               <Route exact path={"/"} component={Login} />
               <Route exact path={"/dashboard"} component={Dashboard} />
               <Route exact path={"/messages"} component={Messages} />
+              <Route exact path={"/syllabus"} component={Syllabus} />
+
               <Route
                 path="/lesson/:lessonId"
                 render={routeProps => {

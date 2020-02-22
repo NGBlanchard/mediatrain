@@ -1,7 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif;
+  color: #353643;
+  
 }
 
 .error {
-  color: red;
+  color: #FF6451;
 }
