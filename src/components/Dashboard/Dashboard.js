@@ -24,6 +24,7 @@ class Dashboard extends React.Component {
           label={`${details.progress}%`}
           variant="success"
           />
+        <h2 className="units-header">Course Overview</h2>
         <Modules 
           className="modules"/>
         <Footer />

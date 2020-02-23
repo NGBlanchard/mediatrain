@@ -15,7 +15,7 @@
   color: white;
   transition-property: background-color;
   transition-timing-function: ease;
-  transition-duration: .4s;
+  transition-duration: .2s;
 }
 
 .lesson-list:hover {
@@ -23,7 +23,7 @@
   color: white;
   transition-property: background-color;
   transition-timing-function: ease;
-  transition-duration: .4s;
+  transition-duration: .2s;
 }
 
 .lesson-list {

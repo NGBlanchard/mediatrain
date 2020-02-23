@@ -15,7 +15,7 @@ class App extends React.Component {
     details: {
       class: "American Literature",
       teacher: "Nathan Blanchard",
-      progress: 20
+      progress: 80
     },
     units: [
       {
@@ -29,6 +29,10 @@ class App extends React.Component {
       {
         unitid: 13,
         unitname: "Sula"
+      },
+      {
+        unitid: 14,
+        unitname: "Poetry"
       }
     ],
     lessons: [
