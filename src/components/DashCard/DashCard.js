@@ -16,7 +16,7 @@ class DashCard extends React.Component {
         <Accordion.Collapse eventKey={this.props.number} key={lesson.number}>
           <Link to={`/lesson/${lesson.id}`} className="lesson-text">
             <Card.Body className="lesson-list">
-              {lesson.number} {lesson.name}
+              Lesson {lesson.number} &#8212; {lesson.name}
             </Card.Body>
           </Link>
         </Accordion.Collapse>

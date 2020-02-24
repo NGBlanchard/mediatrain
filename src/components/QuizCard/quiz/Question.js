@@ -17,7 +17,6 @@ class Question extends React.Component {
   };
 
   handleSubmit = e => {
-    // const { setCurrent, setScore } = this.props;
     const { question } = this.props;
     const lesson = this.props.lesson.id;
     e.preventDefault();
@@ -36,17 +35,17 @@ class Question extends React.Component {
     const { question } = this.props;
     return (
       <form className="question-form">
-        {this.state.error ? (
-          <p className="error">You must select an answer</p>
-        ) : (
-          ""
-        )}
+        
         <h3>{question.text}</h3>
         <hr />
         <ul className="list-group">
           {question.choices.map(choice => {
             return (
               <li className="list-group-item" key={choice.id}>
+                <div className="choice">
+                  {choice.id}
+                  {".    "}
+                </div>
                 <input
                   onChange={this.handleChange}
                   type="radio"
@@ -58,16 +57,22 @@ class Question extends React.Component {
             );
           })}
         </ul>
-        <div className='submit-button-container'>
-        <Button
-          type="submit"
-          variant="outline-secondary"
-          size="lg"
-          className="submit-button"
-          onClick={this.handleSubmit.bind(this)}
-        >
-          Submit
-        </Button>
+        {this.state.error ? (
+          <p className="error">You must select an answer to move forward.</p>
+        ) : (
+          ""
+        )}
+        <div className="submit-button-container">
+          
+          <Button
+            type="submit"
+            variant="outline-secondary"
+            size="lg"
+            className="submit-button"
+            onClick={this.handleSubmit.bind(this)}
+          >
+            Submit
+          </Button>
         </div>
       </form>
     );

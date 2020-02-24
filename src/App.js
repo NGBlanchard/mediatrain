@@ -115,8 +115,6 @@ class App extends React.Component {
             correct: "a"
           }
         ]
-        // score: 0,
-        // current: 1
       },
       {
         id: 2,
@@ -197,8 +195,6 @@ class App extends React.Component {
             correct: "b"
           }
         ]
-        // score: 0,
-        // current: 1
       },
       {
         id: 3,
@@ -279,13 +275,11 @@ class App extends React.Component {
             correct: "b"
           }
         ]
-        // score: 0,
-        // current: 1
       },
       {
         id: 4,
         number: 2.1,
-        name: "Testing lesson 2.1",
+        name: "Introduction",
         objective: "",
         video: "",
         unitid: 12,
@@ -293,81 +287,154 @@ class App extends React.Component {
         questions: [
           {
             id: 1,
-            text: "What does JSON stand for",
+            text: "In what way(s) is this play different from most other plays?",
             choices: [
               {
-                id: "a",
-                text: "JavaScript Oriented Notation"
+                id: "A",
+                text: "There are little to no sets, scenery, or props."
               },
               {
-                id: "b",
-                text: "JavaScript Object Notation"
+                id: "B",
+                text: "The characters are all isolated from each other.JavaScript Object Notation"
               },
               {
-                id: "c",
-                text: "JavaScript Organic Notation"
+                id: "C",
+                text: "The stage manager is an actual character who addresses the audience."
+              },
+              {
+                id: "D",
+                text: "A & B"
+              },
+              {
+                id: "E",
+                text: "B & C"
+              },
+              {
+                id: "F",
+                text: "A & C"
               }
             ],
-            correct: "b"
+            correct: "F"
           },
           {
             id: 2,
-            text: "Which company mantains ReactJS",
+            text: "What is the relationship between the stage manager and time?",
             choices: [
               {
-                id: "a",
-                text: "Google"
+                id: "A",
+                text: "He slips between the time of the play (1901-1913) and 1938 (narrative present), but as he addresses the audience he becomes “timeless,” or “outside of time.”"
               },
               {
-                id: "b",
-                text: "Facebook"
+                id: "B",
+                text: "He is of the 1930s, narrating the events of the play."
               },
               {
-                id: "c",
-                text: "Airbnb"
+                id: "C",
+                text: "He is of the 1930s, narrating the events of the play."
+              },
+              {
+                id: "D",
+                text: "B & C"
+              },
+              {
+                id: "E",
+                text: "None of the above"
               }
             ],
-            correct: "b"
+            correct: "A"
           },
           {
             id: 3,
             text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
+              "What are the names of the families that are given the most focus in Act I?",
             choices: [
               {
-                id: "a",
-                text: "Yes"
+                id: "A",
+                text: "Webb and Crowell"
               },
               {
-                id: "b",
-                text: "No"
+                id: "B",
+                text: "Crowell and Gibbs"
+              },
+              {
+                id: "C",
+                text: "Newsome and Gibbs"
+              },
+              {
+                id: "D",
+                text: "Webb and Gibbs"
+              },
+              {
+                id: "E",
+                text: "Webb and Crowell"
+              },
+              {
+                id: "F",
+                text: "All of the above"
               }
             ],
-            correct: "a"
+            correct: "D"
           },
           {
             id: 4,
-            text: "Is ReactJS a framework by itself?",
+            text: "The stage manager reveals the fates of several characters, communicating to the audience the future of their lives. This emphasizes the theme of:",
             choices: [
               {
-                id: "a",
-                text: "Yes"
+                id: "A",
+                text: "Money"
               },
               {
-                id: "b",
-                text: "No"
+                id: "B",
+                text: "Heaven"
+              },
+              {
+                id: "C",
+                text: "Death"
+              },
+              {
+                id: "D",
+                text: "A & B"
+              },
+              {
+                id: "E",
+                text: "B & C"
               }
             ],
-            correct: "b"
+            correct: "C"
+          },
+          {
+            id: 5,
+            text: "What is the phrase we used to describe the effect of having no props, no sets, and no scenery?",
+            choices: [
+              {
+                id: "A",
+                text: "Dream vs. Reality"
+              },
+              {
+                id: "B",
+                text: "Foreground the Artifice"
+              },
+              {
+                id: "C",
+                text: "Keep Your Hands To Yourself"
+              },
+              {
+                id: "D",
+                text: "The Truth Is Out There"
+              },
+              {
+                id: "E",
+                text: "Invites the Reader"
+              }
+            ],
+            correct: "B"
           }
         ]
-        // score: 0,
-        // current: 1
       },
       {
         id: 5,
         number: 2.2,
-        name: "Testing lesson 2.2",
+        name: "Act One",
         objective: "",
         video: "",
         unitid: 12,
@@ -375,81 +442,154 @@ class App extends React.Component {
         questions: [
           {
             id: 1,
-            text: "What does JSON stand for",
+            text: "In what way(s) is this play different from most other plays?",
             choices: [
               {
-                id: "a",
-                text: "JavaScript Oriented Notation"
+                id: "A",
+                text: "There are little to no sets, scenery, or props."
               },
               {
-                id: "b",
-                text: "JavaScript Object Notation"
+                id: "B",
+                text: "The characters are all isolated from each other.JavaScript Object Notation"
               },
               {
-                id: "c",
-                text: "JavaScript Organic Notation"
+                id: "C",
+                text: "The stage manager is an actual character who addresses the audience."
+              },
+              {
+                id: "D",
+                text: "A & B"
+              },
+              {
+                id: "E",
+                text: "B & C"
+              },
+              {
+                id: "F",
+                text: "A & C"
               }
             ],
-            correct: "b"
+            correct: "F"
           },
           {
             id: 2,
-            text: "Which company mantains ReactJS",
+            text: "What is the relationship between the stage manager and time?",
             choices: [
               {
-                id: "a",
-                text: "Google"
+                id: "A",
+                text: "He slips between the time of the play (1901-1913) and 1938 (narrative present), but as he addresses the audience he becomes “timeless,” or “outside of time.”"
               },
               {
-                id: "b",
-                text: "Facebook"
+                id: "B",
+                text: "He is of the 1930s, narrating the events of the play."
               },
               {
-                id: "c",
-                text: "Airbnb"
+                id: "C",
+                text: "He is of the 1930s, narrating the events of the play."
+              },
+              {
+                id: "D",
+                text: "B & C"
+              },
+              {
+                id: "E",
+                text: "None of the above"
               }
             ],
-            correct: "b"
+            correct: "A"
           },
           {
             id: 3,
             text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
+              "What are the names of the families that are given the most focus in Act I?",
             choices: [
               {
-                id: "a",
-                text: "Yes"
+                id: "A",
+                text: "Webb and Crowell"
               },
               {
-                id: "b",
-                text: "No"
+                id: "B",
+                text: "Crowell and Gibbs"
+              },
+              {
+                id: "C",
+                text: "Newsome and Gibbs"
+              },
+              {
+                id: "D",
+                text: "Webb and Gibbs"
+              },
+              {
+                id: "E",
+                text: "Webb and Crowell"
+              },
+              {
+                id: "F",
+                text: "All of the above"
               }
             ],
-            correct: "a"
+            correct: "D"
           },
           {
             id: 4,
-            text: "Is ReactJS a framework by itself?",
+            text: "The stage manager reveals the fates of several characters, communicating to the audience the future of their lives. This emphasizes the theme of:",
             choices: [
               {
-                id: "a",
-                text: "Yes"
+                id: "A",
+                text: "Money"
               },
               {
-                id: "b",
-                text: "No"
+                id: "B",
+                text: "Heaven"
+              },
+              {
+                id: "C",
+                text: "Death"
+              },
+              {
+                id: "D",
+                text: "A & B"
+              },
+              {
+                id: "E",
+                text: "B & C"
               }
             ],
-            correct: "b"
+            correct: "C"
+          },
+          {
+            id: 5,
+            text: "What is the phrase we used to describe the effect of having no props, no sets, and no scenery?",
+            choices: [
+              {
+                id: "A",
+                text: "Dream vs. Reality"
+              },
+              {
+                id: "B",
+                text: "Foreground the Artifice"
+              },
+              {
+                id: "C",
+                text: "Keep Your Hands To Yourself"
+              },
+              {
+                id: "D",
+                text: "The Truth Is Out There"
+              },
+              {
+                id: "E",
+                text: "Invites the Reader"
+              }
+            ],
+            correct: "B"
           }
         ]
-        // score: 0,
-        // current: 1
       },
       {
         id: 6,
         number: 2.3,
-        name: "Testing lesson 2.3",
+        name: "Act Two",
         objective: "",
         video: "",
         unitid: 12,
@@ -457,79 +597,301 @@ class App extends React.Component {
         questions: [
           {
             id: 1,
-            text: "What does JSON stand for",
+            text: "What is the effect of beginning Act II in the same way we began Act I?",
             choices: [
               {
-                id: "a",
-                text: "JavaScript Oriented Notation"
+                id: "A",
+                text: "It shows the repetition of things that repeat."
               },
               {
-                id: "b",
-                text: "JavaScript Object Notation"
+                id: "B",
+                text: "It highlights how conflict moves through incremental perturbation toward the climax."
               },
               {
-                id: "c",
-                text: "JavaScript Organic Notation"
-              }
+                id: "C",
+                text: "It shows how certain larger structures have not changed, yet there are subtle changes. It reflects the juxtaposition of the cosmic scale with the human scale."
+              },
+              {
+                id: "D",
+                text: "It doesn’t, this is a trick question."
+              },
+              {
+                id: "E",
+                text: "A & B"
+              },
+              {
+                id: "F",
+                text: "B & C"
+              },
             ],
-            correct: "b"
+            correct: "C"
           },
           {
             id: 2,
-            text: "Which company mantains ReactJS",
+            text: "Dr. Gibbs and Mrs. Gibbs",
             choices: [
               {
-                id: "a",
-                text: "Google"
+                id: "A",
+                text: "Were not nervous at their own wedding."
               },
               {
-                id: "b",
-                text: "Facebook"
+                id: "B",
+                text: "Were disappointed with Emily and George."
               },
               {
-                id: "c",
-                text: "Airbnb"
+                id: "C",
+                text: "Are worried about the growing problem in Europe."
+              },
+              {
+                id: "D",
+                text: "All of the above."
+              },
+              {
+                id: "E",
+                text: "None of the above"
               }
             ],
-            correct: "b"
+            correct: "E"
           },
           {
             id: 3,
             text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
+              "The officiant is",
             choices: [
               {
-                id: "a",
-                text: "Yes"
+                id: "A",
+                text: "Intentionally boring, Si Crowell"
               },
               {
-                id: "b",
-                text: "No"
+                id: "B",
+                text: "Unintentionally boring, The Stage Manager"
+              },
+              {
+                id: "C",
+                text: "Unintentionally boring, Dr. Gibbs"
+              },
+              {
+                id: "D",
+                text: "Intentionally boring, The Stage Manager"
+              },
+              {
+                id: "E",
+                text: "Unintentionally boring, Howie Newsome"
               }
             ],
-            correct: "a"
+            correct: "D"
           },
           {
             id: 4,
-            text: "Is ReactJS a framework by itself?",
+            text: "How does 'Ceci n'est pas une pipe' relate to the play?",
             choices: [
               {
-                id: "a",
-                text: "Yes"
+                id: "A",
+                text: "It doesn’t, that’s French and this is English."
               },
               {
-                id: "b",
-                text: "No"
+                id: "B",
+                text: "In both pieces, the artifice is foregrounded."
+              },
+              {
+                id: "C",
+                text: "The Stage Manager has a pipe in Act I."
+              },
+              {
+                id: "D",
+                text: "None of the above"
+              },
+              {
+                id: "E",
+                text: "A & B"
+              },
+              {
+                id: "F",
+                text: "B & C"
               }
             ],
-            correct: "b"
+            correct: "B"
+          },
+          {
+            id: 5,
+            text: "What nonlinear technique is used in Act II?",
+            choices: [
+              {
+                id: "A",
+                text: "Flashback"
+              },
+              {
+                id: "B",
+                text: "Flashforward"
+              },
+              {
+                id: "C",
+                text: "Flash sideways"
+              },
+              {
+                id: "D",
+                text: "This is a trick question, this is a linear narrative"
+              },
+              {
+                id: "E",
+                text: "Are you out of your skull!?"
+              },
+            ],
+            correct: "A"
           }
+
         ]
-        // score: 0,
-        // current: 1
       },
       {
         id: 7,
+        number: 2.4,
+        name: "Act Three",
+        objective: "",
+        video: "",
+        unitid: 12,
+        content: "lorem ipsum",
+        questions: [
+          {
+            id: 1,
+            text: " Why does Emily go back to her 12th birthday?",
+            choices: [
+              {
+                id: "A",
+                text: "She wants to choose a happy, but ordinary day."
+              },
+              {
+                id: "B",
+                text: "She is only allowed to choose a day from before her marriage."
+              },
+              {
+                id: "C",
+                text: "It was the happiest day of her life."
+              },
+              {
+                id: "D",
+                text: "It was the saddest day of her life."
+              },
+              {
+                id: "E",
+                text: "B & C"
+              }
+            ],
+            correct: "A"
+          },
+          {
+            id: 2,
+            text: "_______ says, 'Choose the least important day in your life. It will be __________ enough.'",
+            choices: [
+              {
+                id: "A",
+                text: "The Stage Manager, important"
+              },
+              {
+                id: "B",
+                text: "Mrs. Gibbs, sad"
+              },
+              {
+                id: "C",
+                text: "The Stage Manager, sad"
+              },
+              {
+                id: "D",
+                text: "Mrs. Gibbs, important"
+              },
+              {
+                id: "E",
+                text: "None of the above"
+              }
+            ],
+            correct: "D"
+          },
+          {
+            id: 3,
+            text:
+              "What do the dead do in the cemetery?",
+            choices: [
+              {
+                id: "A",
+                text: "Forget the living and await what’s next."
+              },
+              {
+                id: "B",
+                text: "Debate the merits of goodwill and simple life."
+              },
+              {
+                id: "C",
+                text: "Try to change the past."
+              },
+              {
+                id: "D",
+                text: "B & C"
+              },
+              {
+                id: "E",
+                text: "All of the above."
+              }
+            ],
+            correct: "A"
+          },
+          {
+            id: 4,
+            text: "What does Emily realize about life in Act III?",
+            choices: [
+              {
+                id: "A",
+                text: "Death means never having to say goodbye. The dead watch over us and are still with us as we move through our lives."
+              },
+              {
+                id: "B",
+                text: "She should never have longed to move to the big city. Grover’s Corners was just as fulfilling as any other place to live, and she wasted her life wanting more."
+              },
+              {
+                id: "C",
+                text: "People do not appreciate the beauty of life, that life seems to be made of insignificant days, but they are significant because we are alive."
+              },
+              {
+                id: "D",
+                text: "A & B"
+              },
+              {
+                id: "E",
+                text: "All of the above"
+              }
+            ],
+            correct: "C"
+          },
+          {
+            id: 5,
+            text: "How does 'Ceci n'est pas une pipe' heighten the impact of Act III?",
+            choices: [
+              {
+                id: "A",
+                text: "The audience has been innoculated against the sentimentality of the play by acknowledging the whole time that it is just that: a play, and so they are unexpectedly receptive to its larger themes."
+              },
+              {
+                id: "B",
+                text: "The audience has been giggling about how silly the actors look pretending to hold props, which shows that there’s always comedy in tragedy."
+              },
+              {
+                id: "C",
+                text: "George and Emily aren’t really in love, they are a 'false representation' of love."
+              },
+              {
+                id: "D",
+                text: "A & C"
+              },
+              {
+                id: "E",
+                text: "B & C"
+              }
+            ],
+            correct: "A"
+          }
+
+        ]
+      },
+      {
+        id: 8,
         number: 3.1,
         name: "Testing lesson 3.1",
         objective: "",
@@ -607,11 +969,9 @@ class App extends React.Component {
             correct: "b"
           }
         ]
-        // score: 0,
-        // current: 1
       },
       {
-        id: 8,
+        id: 9,
         number: 3.2,
         name: "Testing lesson 3.2",
         objective: "",
@@ -689,11 +1049,9 @@ class App extends React.Component {
             correct: "b"
           }
         ]
-        // score: 0,
-        // current: 1
       },
       {
-        id: 9,
+        id: 10,
         number: 3.3,
         name: "Testing lesson 3.3",
         objective: "",
@@ -771,11 +1129,9 @@ class App extends React.Component {
             correct: "b"
           }
         ]
-        // score: 0,
-        // current: 1
       },
       {
-        id: 10,
+        id: 11,
         number: 3.4,
         name: "Testing lesson 3.4",
         objective: "",
@@ -853,8 +1209,6 @@ class App extends React.Component {
             correct: "b"
           }
         ]
-        // score: 0,
-        // current: 1
       }
     ]
   };
