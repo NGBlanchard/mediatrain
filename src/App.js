@@ -39,7 +39,7 @@ class App extends React.Component {
       {
         id: 1,
         number: 1.1,
-        name: "Testing lesson 1.1",
+        name: "Introduction",
         unitid: 11,
         objective: "",
         video: "",
@@ -281,7 +281,7 @@ class App extends React.Component {
         number: 2.1,
         name: "Introduction",
         objective: "",
-        video: "",
+        video: "https://www.youtube.com/embed/udfqpajleeQ?rel=0&amp;showinfo=0",
         unitid: 12,
         content: "lorem ipsum",
         questions: [
@@ -436,7 +436,7 @@ class App extends React.Component {
         number: 2.2,
         name: "Act One",
         objective: "",
-        video: "",
+        video: "https://www.youtube.com/embed/udfqpajleeQ?rel=0&amp;showinfo=0",
         unitid: 12,
         content: "lorem ipsum",
         questions: [
