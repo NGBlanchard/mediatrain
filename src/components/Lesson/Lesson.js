@@ -20,6 +20,7 @@ class Lesson extends React.Component {
     return (
       <>
         <main className="lesson-main">
+          <section className="pre-header">Lesson {lesson.number}</section>
           <header className="lesson-header">{lesson.name}</header>
           <section className="lesson-content">{lesson.content}</section>
           {lesson.video.length !== 0 ? (

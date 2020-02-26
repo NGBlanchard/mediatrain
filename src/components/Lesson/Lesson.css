@@ -5,12 +5,18 @@
   background-color: rgb(247, 247, 247);
 }
 
+.pre-header {
+  margin-top: 60px;
+  font-size: 15px;
+  line-height: 17px;
+  color: gray;
+}
+
 .lesson-header {
   font-size: 50px;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .video {

@@ -32,7 +32,9 @@ class DashCard extends React.Component {
         >
           <div className="card-container">
             <div className="unit-container">
-              <span className="unit-number">Module {this.props.unit.unitid}</span>
+              <span className="unit-number">
+                Module {this.props.unit.unitid}
+              </span>
               <span className="unit-name"> {this.props.unit.unitname}</span>
             </div>
             <span className="lesson-count">/{lessonsForUnit.length}</span>
