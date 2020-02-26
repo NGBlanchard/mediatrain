@@ -1,11 +1,12 @@
 .module-title {
   cursor: pointer;
   font-family: 'Nanum Gothic', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bolder;
   margin: 20px;
-  line-height: 40px;
-  background-color: #FF6451;
-  color: white;
+  line-height: 25px;
+  /* background-color: #FF6451;
+  color: white; */
   border: none;
   box-shadow: 0px 0px 8px #8e8e8e;
 }
@@ -36,10 +37,30 @@
 .lesson-text {
   color: gray;
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .lesson-text:hover {
   color: gray;
   text-decoration: none;
+}
+
+.unit-number {
+  font-size: 10px;
+  line-height: 11px;;
+}
+
+.unit-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lesson-count {
+  font-size: 11px;
 }

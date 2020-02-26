@@ -19,32 +19,97 @@ class App extends React.Component {
     },
     units: [
       {
+        unitid: 1,
+        unitname: "Hello, Getting Started"
+      },
+      {
+        unitid: 2,
+        unitname: "Fundamentals of American Literature"
+      },
+      {
+        unitid: 3,
+        unitname: "American Identity Part I"
+      },
+      {
+        unitid: 4,
+        unitname: "Dreams & Disillusionment"
+      },
+      {
+        unitid: 5,
+        unitname: "Descriptive Narrative"
+      },
+      {
+        unitid: 6,
+        unitname: "Horror"
+      },
+      {
+        unitid: 7,
+        unitname: "Media Literacy: Copyrights & Wrongs"
+      },
+      {
+        unitid: 8,
+        unitname: "American Identity Part II"
+      },
+      {
+        unitid: 9,
+        unitname: "Comedy"
+      },
+      {
+        unitid: 10,
+        unitname: "Media Literacy: Fakes & Hoaxes"
+      },
+      {
         unitid: 11,
-        unitname: "The Great Gatsby"
+        unitname: "Individuality & Conformity",
       },
       {
         unitid: 12,
-        unitname: "Our Town"
+        unitname: "Media Literacy: Effective Research Strategies"
       },
       {
         unitid: 13,
-        unitname: "Sula"
+        unitname: "Argumentation"
       },
       {
         unitid: 14,
-        unitname: "Poetry"
-      }
+        unitname: "Fabulism"
+      },
+      {
+        unitid: 15,
+        unitname: "Transformations"
+      },
+      {
+        unitid: 16,
+        unitname: "Media Literacy: Your Data"
+      },
+      {
+        unitid: 17,
+        unitname: "The American Songbook"
+      },
+      {
+        unitid: 18,
+        unitname: "Media Literacy: Finding Happiness on Your Phone"
+      },
+      {
+        unitid: 19,
+        unitname: "American Beauty"
+      },
+      {
+        unitid: 20,
+        unitname: "Goodbye To All That"
+      },
     ],
     lessons: [
       {
         id: 1,
         number: 1.1,
-        name: "Introduction",
-        unitid: 11,
+        name: "Getting Started",
+        unitid: 1,
         objective: "",
         video: "",
         content:
           "This course presents a historical overview of the American literary tradition. Students will be exposed to American culture, heritage, and history through the study of American literature, to develop and apply effective communication skills through speaking and active listening in small and large groups, and to continue advancement towards refined writing skills.",
+        closing: "",  
         questions: [
           {
             id: 1,
@@ -119,11 +184,12 @@ class App extends React.Component {
       {
         id: 2,
         number: 1.2,
-        name: "Testing lesson 1.2",
+        name: "Code of Conduct",
         objective: "",
         video: "",
-        unitid: 11,
+        unitid: 1,
         content: "lorem ipsum",
+        closing: "",
         questions: [
           {
             id: 1,
@@ -195,15 +261,15 @@ class App extends React.Component {
             correct: "b"
           }
         ]
-      },
-      {
+      },{
         id: 3,
         number: 1.3,
-        name: "Testing lesson 1.3",
+        name: "Class Overview",
         objective: "",
         video: "",
-        unitid: 11,
+        unitid: 1,
         content: "lorem ipsum",
+        closing: "",
         questions: [
           {
             id: 1,
@@ -278,167 +344,2686 @@ class App extends React.Component {
       },
       {
         id: 4,
-        number: 2.1,
-        name: "Introduction",
+        number: 1.4,
+        name: "Staying on Pace",
         objective: "",
-        video: "https://www.youtube.com/embed/udfqpajleeQ?rel=0&amp;showinfo=0",
-        unitid: 12,
+        video: "",
+        unitid: 1,
         content: "lorem ipsum",
+        closing: "",
         questions: [
           {
             id: 1,
-            text: "In what way(s) is this play different from most other plays?",
+            text: "What does JSON stand for",
             choices: [
               {
-                id: "A",
-                text: "There are little to no sets, scenery, or props."
+                id: "a",
+                text: "JavaScript Oriented Notation"
               },
               {
-                id: "B",
-                text: "The characters are all isolated from each other.JavaScript Object Notation"
+                id: "b",
+                text: "JavaScript Object Notation"
               },
               {
-                id: "C",
-                text: "The stage manager is an actual character who addresses the audience."
-              },
-              {
-                id: "D",
-                text: "A & B"
-              },
-              {
-                id: "E",
-                text: "B & C"
-              },
-              {
-                id: "F",
-                text: "A & C"
+                id: "c",
+                text: "JavaScript Organic Notation"
               }
             ],
-            correct: "F"
+            correct: "b"
           },
           {
             id: 2,
-            text: "What is the relationship between the stage manager and time?",
+            text: "Which company mantains ReactJS",
             choices: [
               {
-                id: "A",
-                text: "He slips between the time of the play (1901-1913) and 1938 (narrative present), but as he addresses the audience he becomes “timeless,” or “outside of time.”"
+                id: "a",
+                text: "Google"
               },
               {
-                id: "B",
-                text: "He is of the 1930s, narrating the events of the play."
+                id: "b",
+                text: "Facebook"
               },
               {
-                id: "C",
-                text: "He is of the 1930s, narrating the events of the play."
-              },
-              {
-                id: "D",
-                text: "B & C"
-              },
-              {
-                id: "E",
-                text: "None of the above"
+                id: "c",
+                text: "Airbnb"
               }
             ],
-            correct: "A"
+            correct: "b"
           },
           {
             id: 3,
             text:
-              "What are the names of the families that are given the most focus in Act I?",
+              "Is it an antipattern to include props in the getInitialState method of a component?",
             choices: [
               {
-                id: "A",
-                text: "Webb and Crowell"
+                id: "a",
+                text: "Yes"
               },
               {
-                id: "B",
-                text: "Crowell and Gibbs"
-              },
-              {
-                id: "C",
-                text: "Newsome and Gibbs"
-              },
-              {
-                id: "D",
-                text: "Webb and Gibbs"
-              },
-              {
-                id: "E",
-                text: "Webb and Crowell"
-              },
-              {
-                id: "F",
-                text: "All of the above"
+                id: "b",
+                text: "No"
               }
             ],
-            correct: "D"
+            correct: "a"
           },
           {
             id: 4,
-            text: "The stage manager reveals the fates of several characters, communicating to the audience the future of their lives. This emphasizes the theme of:",
+            text: "Is ReactJS a framework by itself?",
             choices: [
               {
-                id: "A",
-                text: "Money"
+                id: "a",
+                text: "Yes"
               },
               {
-                id: "B",
-                text: "Heaven"
-              },
-              {
-                id: "C",
-                text: "Death"
-              },
-              {
-                id: "D",
-                text: "A & B"
-              },
-              {
-                id: "E",
-                text: "B & C"
+                id: "b",
+                text: "No"
               }
             ],
-            correct: "C"
-          },
-          {
-            id: 5,
-            text: "What is the phrase we used to describe the effect of having no props, no sets, and no scenery?",
-            choices: [
-              {
-                id: "A",
-                text: "Dream vs. Reality"
-              },
-              {
-                id: "B",
-                text: "Foreground the Artifice"
-              },
-              {
-                id: "C",
-                text: "Keep Your Hands To Yourself"
-              },
-              {
-                id: "D",
-                text: "The Truth Is Out There"
-              },
-              {
-                id: "E",
-                text: "Invites the Reader"
-              }
-            ],
-            correct: "B"
+            correct: "b"
           }
         ]
       },
       {
         id: 5,
+        number: 1.5,
+        name: "Learning Strategies",
+        objective: "",
+        video: "",
+        unitid: 1,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 6,
+        number: 1.6,
+        name: "Why We Read",
+        objective: "",
+        video: "",
+        unitid: 1,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 7,
         number: 2.2,
-        name: "Act One",
+        name: "Reading & Thinking Critically",
+        objective: "",
+        video: "",
+        unitid: 2,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 8,
+        number: 2.3,
+        name: "Essential Questions",
+        objective: "",
+        video: "",
+        unitid: 2,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 9,
+        number: 2.4,
+        name: "Literary Terms & Academic Vocabulary",
+        objective: "",
+        video: "",
+        unitid: 2,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 10,
+        number: 2.5,
+        name: "The American Timeline: Why We Can't Cover Everything",
+        objective: "",
+        video: "",
+        unitid: 2,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 11,
+        number: 4.1,
+        name: "Introduction: The American Dream",
+        objective: "",
+        video: "",
+        unitid: 4,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 12,
+        number: 4.2,
+        name: "F. Scott Fitzgerald",
+        objective: "",
+        video: "",
+        unitid: 4,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 13,
+        number: 4.3,
+        name: "The Great Gatsby: Chapter One",
+        objective: "",
+        video: "",
+        unitid: 4,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 14,
+        number: 4.4,
+        name: "The Great Gatsby: Chapter Two",
+        objective: "",
+        video: "",
+        unitid: 4,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 15,
+        number: 4.5,
+        name: "The Great Gatsby: Chapter Three",
+        objective: "",
+        video: "",
+        unitid: 4,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 16,
+        number: 4.6,
+        name: "The Great Gatsby: Chapter Four",
+        objective: "",
+        video: "",
+        unitid: 4,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 17,
+        number: 4.7,
+        name: "The Great Gatsby: Chapter Five",
+        objective: "",
+        video: "",
+        unitid: 4,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 18,
+        number: 4.8,
+        name: "The Great Gatsby: Chapter Six",
+        objective: "",
+        video: "",
+        unitid: 4,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 19,
+        number: 4.9,
+        name: "The Great Gatsby: Chapter Seven",
+        objective: "",
+        video: "",
+        unitid: 4,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 20,
+        number: 4.10,
+        name: "The Great Gatsby: Chapter Eight",
+        objective: "",
+        video: "",
+        unitid: 4,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 21,
+        number: 4.11,
+        name: "The Great Gatsby: Chapter Nine",
+        objective: "",
+        video: "",
+        unitid: 4,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 22,
+        number: 4.12,
+        name: "Cover Art",
+        objective: "",
+        video: "",
+        unitid: 4,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 23,
+        number: 4.13,
+        name: "Boats Against the Current",
+        objective: "",
+        video: "",
+        unitid: 4,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 24,
+        number: 5.1,
+        name: "Introduction",
+        objective: "",
+        video: "",
+        unitid: 5,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 25,
+        number: 5.2,
+        name: "Explode the Moment",
+        objective: "",
+        video: "",
+        unitid: 5,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 26,
+        number: 5.3,
+        name: "Descriptive Language",
+        objective: "",
+        video: "",
+        unitid: 5,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 27,
+        number: 5.4,
+        name: "The Crux of Narrative",
+        objective: "",
+        video: "",
+        unitid: 5,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 28,
+        number: 5.5,
+        name: "Writing Your Descriptive Narrative",
+        objective: "",
+        video: "",
+        unitid: 5,
+        content: "Values Wheel",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 29,
+        number: 6.1,
+        name: "Introduction",
+        objective: "",
+        video: "",
+        unitid: 6,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 30,
+        number: 6.2,
+        name: "The Swimming Pool",
+        objective: "",
+        video: "",
+        unitid: 6,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 31,
+        number: 6.3,
+        name: "The Tell-Tale Heart",
+        objective: "",
+        video: "",
+        unitid: 6,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 32,
+        number: 6.4,
+        name: "Orientation",
+        objective: "",
+        video: "",
+        unitid: 6,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 33,
+        number: 6.5,
+        name: "Forms: Audio, Comics, TV, etcetera",
+        objective: "",
+        video: "",
+        unitid: 6,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 34,
+        number: 6.6,
+        name: "Urban Legends",
+        objective: "",
+        video: "",
+        unitid: 6,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 35,
+        number: 6.7,
+        name: "Don't Look Behind You",
+        objective: "",
+        video: "",
+        unitid: 6,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 36,
+        number: 6.8,
+        name: "On Fear",
+        objective: "",
+        video: "",
+        unitid: 6,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "What does JSON stand for",
+            choices: [
+              {
+                id: "a",
+                text: "JavaScript Oriented Notation"
+              },
+              {
+                id: "b",
+                text: "JavaScript Object Notation"
+              },
+              {
+                id: "c",
+                text: "JavaScript Organic Notation"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 2,
+            text: "Which company mantains ReactJS",
+            choices: [
+              {
+                id: "a",
+                text: "Google"
+              },
+              {
+                id: "b",
+                text: "Facebook"
+              },
+              {
+                id: "c",
+                text: "Airbnb"
+              }
+            ],
+            correct: "b"
+          },
+          {
+            id: 3,
+            text:
+              "Is it an antipattern to include props in the getInitialState method of a component?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "a"
+          },
+          {
+            id: 4,
+            text: "Is ReactJS a framework by itself?",
+            choices: [
+              {
+                id: "a",
+                text: "Yes"
+              },
+              {
+                id: "b",
+                text: "No"
+              }
+            ],
+            correct: "b"
+          }
+        ]
+      },
+      {
+        id: 37,
+        number: 10.1,
+        name: "Introduction: Reading Drama",
         objective: "",
         video: "https://www.youtube.com/embed/udfqpajleeQ?rel=0&amp;showinfo=0",
-        unitid: 12,
+        unitid: 10,
         content: "lorem ipsum",
+        closing: "Act I end with a juxtaposition between the human scale and the cosmic scale...",
         questions: [
           {
             id: 1,
@@ -587,13 +3172,170 @@ class App extends React.Component {
         ]
       },
       {
-        id: 6,
-        number: 2.3,
+        id: 38,
+        number: 10.2,
+        name: "Act One",
+        objective: "",
+        video: "https://www.youtube.com/embed/udfqpajleeQ?rel=0&amp;showinfo=0",
+        unitid: 10,
+        content: "lorem ipsum",
+        closing: "",
+        questions: [
+          {
+            id: 1,
+            text: "In what way(s) is this play different from most other plays?",
+            choices: [
+              {
+                id: "A",
+                text: "There are little to no sets, scenery, or props."
+              },
+              {
+                id: "B",
+                text: "The characters are all isolated from each other.JavaScript Object Notation"
+              },
+              {
+                id: "C",
+                text: "The stage manager is an actual character who addresses the audience."
+              },
+              {
+                id: "D",
+                text: "A & B"
+              },
+              {
+                id: "E",
+                text: "B & C"
+              },
+              {
+                id: "F",
+                text: "A & C"
+              }
+            ],
+            correct: "F"
+          },
+          {
+            id: 2,
+            text: "What is the relationship between the stage manager and time?",
+            choices: [
+              {
+                id: "A",
+                text: "He slips between the time of the play (1901-1913) and 1938 (narrative present), but as he addresses the audience he becomes “timeless,” or “outside of time.”"
+              },
+              {
+                id: "B",
+                text: "He is of the 1930s, narrating the events of the play."
+              },
+              {
+                id: "C",
+                text: "He is of the 1930s, narrating the events of the play."
+              },
+              {
+                id: "D",
+                text: "B & C"
+              },
+              {
+                id: "E",
+                text: "None of the above"
+              }
+            ],
+            correct: "A"
+          },
+          {
+            id: 3,
+            text:
+              "What are the names of the families that are given the most focus in Act I?",
+            choices: [
+              {
+                id: "A",
+                text: "Webb and Crowell"
+              },
+              {
+                id: "B",
+                text: "Crowell and Gibbs"
+              },
+              {
+                id: "C",
+                text: "Newsome and Gibbs"
+              },
+              {
+                id: "D",
+                text: "Webb and Gibbs"
+              },
+              {
+                id: "E",
+                text: "Webb and Crowell"
+              },
+              {
+                id: "F",
+                text: "All of the above"
+              }
+            ],
+            correct: "D"
+          },
+          {
+            id: 4,
+            text: "The stage manager reveals the fates of several characters, communicating to the audience the future of their lives. This emphasizes the theme of:",
+            choices: [
+              {
+                id: "A",
+                text: "Money"
+              },
+              {
+                id: "B",
+                text: "Heaven"
+              },
+              {
+                id: "C",
+                text: "Death"
+              },
+              {
+                id: "D",
+                text: "A & B"
+              },
+              {
+                id: "E",
+                text: "B & C"
+              }
+            ],
+            correct: "C"
+          },
+          {
+            id: 5,
+            text: "What is the phrase we used to describe the effect of having no props, no sets, and no scenery?",
+            choices: [
+              {
+                id: "A",
+                text: "Dream vs. Reality"
+              },
+              {
+                id: "B",
+                text: "Foreground the Artifice"
+              },
+              {
+                id: "C",
+                text: "Keep Your Hands To Yourself"
+              },
+              {
+                id: "D",
+                text: "The Truth Is Out There"
+              },
+              {
+                id: "E",
+                text: "Invites the Reader"
+              }
+            ],
+            correct: "B"
+          }
+        ]
+      },
+      {
+        id: 39,
+        number: 10.3,
         name: "Act Two",
         objective: "",
         video: "",
-        unitid: 12,
+        unitid: 10,
         content: "lorem ipsum",
+        closing: "",
         questions: [
           {
             id: 1,
@@ -743,13 +3485,14 @@ class App extends React.Component {
         ]
       },
       {
-        id: 7,
-        number: 2.4,
+        id: 40,
+        number: 10.4,
         name: "Act Three",
         objective: "",
         video: "",
-        unitid: 12,
+        unitid: 10,
         content: "lorem ipsum",
+        closing: "",
         questions: [
           {
             id: 1,
@@ -891,325 +3634,155 @@ class App extends React.Component {
         ]
       },
       {
-        id: 8,
-        number: 3.1,
-        name: "Testing lesson 3.1",
+        id: 41,
+        number: 10.5,
+        name: "Analysis: Pessimisim vs. Optimism",
         objective: "",
         video: "",
-        unitid: 13,
+        unitid: 10,
         content: "lorem ipsum",
+        closing: "",
         questions: [
           {
             id: 1,
-            text: "What does JSON stand for",
+            text: " Why does Emily go back to her 12th birthday?",
             choices: [
               {
-                id: "a",
-                text: "JavaScript Oriented Notation"
+                id: "A",
+                text: "She wants to choose a happy, but ordinary day."
               },
               {
-                id: "b",
-                text: "JavaScript Object Notation"
+                id: "B",
+                text: "She is only allowed to choose a day from before her marriage."
               },
               {
-                id: "c",
-                text: "JavaScript Organic Notation"
+                id: "C",
+                text: "It was the happiest day of her life."
+              },
+              {
+                id: "D",
+                text: "It was the saddest day of her life."
+              },
+              {
+                id: "E",
+                text: "B & C"
               }
             ],
-            correct: "b"
+            correct: "A"
           },
           {
             id: 2,
-            text: "Which company mantains ReactJS",
+            text: "_______ says, 'Choose the least important day in your life. It will be __________ enough.'",
             choices: [
               {
-                id: "a",
-                text: "Google"
+                id: "A",
+                text: "The Stage Manager, important"
               },
               {
-                id: "b",
-                text: "Facebook"
+                id: "B",
+                text: "Mrs. Gibbs, sad"
               },
               {
-                id: "c",
-                text: "Airbnb"
+                id: "C",
+                text: "The Stage Manager, sad"
+              },
+              {
+                id: "D",
+                text: "Mrs. Gibbs, important"
+              },
+              {
+                id: "E",
+                text: "None of the above"
               }
             ],
-            correct: "b"
+            correct: "D"
           },
           {
             id: 3,
             text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
+              "What do the dead do in the cemetery?",
             choices: [
               {
-                id: "a",
-                text: "Yes"
+                id: "A",
+                text: "Forget the living and await what’s next."
               },
               {
-                id: "b",
-                text: "No"
+                id: "B",
+                text: "Debate the merits of goodwill and simple life."
+              },
+              {
+                id: "C",
+                text: "Try to change the past."
+              },
+              {
+                id: "D",
+                text: "B & C"
+              },
+              {
+                id: "E",
+                text: "All of the above."
               }
             ],
-            correct: "a"
+            correct: "A"
           },
           {
             id: 4,
-            text: "Is ReactJS a framework by itself?",
+            text: "What does Emily realize about life in Act III?",
             choices: [
               {
-                id: "a",
-                text: "Yes"
+                id: "A",
+                text: "Death means never having to say goodbye. The dead watch over us and are still with us as we move through our lives."
               },
               {
-                id: "b",
-                text: "No"
+                id: "B",
+                text: "She should never have longed to move to the big city. Grover’s Corners was just as fulfilling as any other place to live, and she wasted her life wanting more."
+              },
+              {
+                id: "C",
+                text: "People do not appreciate the beauty of life, that life seems to be made of insignificant days, but they are significant because we are alive."
+              },
+              {
+                id: "D",
+                text: "A & B"
+              },
+              {
+                id: "E",
+                text: "All of the above"
               }
             ],
-            correct: "b"
+            correct: "C"
+          },
+          {
+            id: 5,
+            text: "How does 'Ceci n'est pas une pipe' heighten the impact of Act III?",
+            choices: [
+              {
+                id: "A",
+                text: "The audience has been innoculated against the sentimentality of the play by acknowledging the whole time that it is just that: a play, and so they are unexpectedly receptive to its larger themes."
+              },
+              {
+                id: "B",
+                text: "The audience has been giggling about how silly the actors look pretending to hold props, which shows that there’s always comedy in tragedy."
+              },
+              {
+                id: "C",
+                text: "George and Emily aren’t really in love, they are a 'false representation' of love."
+              },
+              {
+                id: "D",
+                text: "A & C"
+              },
+              {
+                id: "E",
+                text: "B & C"
+              }
+            ],
+            correct: "A"
           }
+
         ]
       },
-      {
-        id: 9,
-        number: 3.2,
-        name: "Testing lesson 3.2",
-        objective: "",
-        video: "",
-        unitid: 13,
-        content: "lorem ipsum",
-        questions: [
-          {
-            id: 1,
-            text: "What does JSON stand for",
-            choices: [
-              {
-                id: "a",
-                text: "JavaScript Oriented Notation"
-              },
-              {
-                id: "b",
-                text: "JavaScript Object Notation"
-              },
-              {
-                id: "c",
-                text: "JavaScript Organic Notation"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 2,
-            text: "Which company mantains ReactJS",
-            choices: [
-              {
-                id: "a",
-                text: "Google"
-              },
-              {
-                id: "b",
-                text: "Facebook"
-              },
-              {
-                id: "c",
-                text: "Airbnb"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 3,
-            text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "a"
-          },
-          {
-            id: 4,
-            text: "Is ReactJS a framework by itself?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "b"
-          }
-        ]
-      },
-      {
-        id: 10,
-        number: 3.3,
-        name: "Testing lesson 3.3",
-        objective: "",
-        video: "",
-        unitid: 13,
-        content: "lorem ipsum",
-        questions: [
-          {
-            id: 1,
-            text: "What does JSON stand for",
-            choices: [
-              {
-                id: "a",
-                text: "JavaScript Oriented Notation"
-              },
-              {
-                id: "b",
-                text: "JavaScript Object Notation"
-              },
-              {
-                id: "c",
-                text: "JavaScript Organic Notation"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 2,
-            text: "Which company mantains ReactJS",
-            choices: [
-              {
-                id: "a",
-                text: "Google"
-              },
-              {
-                id: "b",
-                text: "Facebook"
-              },
-              {
-                id: "c",
-                text: "Airbnb"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 3,
-            text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "a"
-          },
-          {
-            id: 4,
-            text: "Is ReactJS a framework by itself?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "b"
-          }
-        ]
-      },
-      {
-        id: 11,
-        number: 3.4,
-        name: "Testing lesson 3.4",
-        objective: "",
-        video: "",
-        unitid: 13,
-        content: "lorem ipsum",
-        questions: [
-          {
-            id: 1,
-            text: "What does JSON stand for",
-            choices: [
-              {
-                id: "a",
-                text: "JavaScript Oriented Notation"
-              },
-              {
-                id: "b",
-                text: "JavaScript Object Notation"
-              },
-              {
-                id: "c",
-                text: "JavaScript Organic Notation"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 2,
-            text: "Which company mantains ReactJS",
-            choices: [
-              {
-                id: "a",
-                text: "Google"
-              },
-              {
-                id: "b",
-                text: "Facebook"
-              },
-              {
-                id: "c",
-                text: "Airbnb"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 3,
-            text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "a"
-          },
-          {
-            id: 4,
-            text: "Is ReactJS a framework by itself?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "b"
-          }
-        ]
-      }
+      
     ]
   };
 
