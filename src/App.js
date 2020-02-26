@@ -92,10 +92,14 @@ class App extends React.Component {
       },
       {
         unitid: 19,
-        unitname: "American Beauty"
+        unitname: "Hybrid Essay"
       },
       {
         unitid: 20,
+        unitname: "American Beauty"
+      },
+      {
+        unitid: 21,
         unitname: "Goodbye To All That"
       },
     ],
@@ -587,7 +591,7 @@ class App extends React.Component {
       },
       {
         id: 7,
-        number: 2.2,
+        number: 2.1,
         name: "Reading & Thinking Critically",
         objective: "",
         video: "",
@@ -668,7 +672,7 @@ class App extends React.Component {
       },
       {
         id: 8,
-        number: 2.3,
+        number: 2.2,
         name: "Essential Questions",
         objective: "",
         video: "",
@@ -749,7 +753,7 @@ class App extends React.Component {
       },
       {
         id: 9,
-        number: 2.4,
+        number: 2.3,
         name: "Literary Terms & Academic Vocabulary",
         objective: "",
         video: "",
@@ -830,7 +834,7 @@ class App extends React.Component {
       },
       {
         id: 10,
-        number: 2.5,
+        number: 2.4,
         name: "The American Timeline: Why We Can't Cover Everything",
         objective: "",
         video: "",

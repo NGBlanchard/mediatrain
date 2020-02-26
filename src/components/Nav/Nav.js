@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Navbar from 'react-bootstrap/Navbar'
 import Dashboard from "../../images/dashboard.png";
 import Messages from "../../images/messagesblue.png";
 import Logo from "../../images/logo.png";
+import CurrentGrade from "../CurrentGrade/CurrentGrade";
+
 
 import ModulesContext from "../ModulesContext";
 
@@ -17,9 +20,9 @@ export default class Nav extends Component {
   static contextType = ModulesContext;
 
   render() {
-    const { details = [] } = this.context;
+    // const { details = [] } = this.context;
     return (
-      <nav className="nav">
+      <Navbar className="nav" sticky="top">
         {/* <h1>
           {details.class}
         </h1> */}
@@ -34,7 +37,8 @@ export default class Nav extends Component {
             <img src={Messages} className="messages" alt="messages logo"></img>
           </Link>
         </div>
-      </nav>
+        <CurrentGrade />
+      </Navbar>
     );
   }
 }

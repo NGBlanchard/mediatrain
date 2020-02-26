@@ -11,19 +11,39 @@ class Modules extends React.Component {
   render() {
     const { units, lessons } = this.context;
     const renderedList = units.map(unit => {
-      return (
-        <DashCard
-          unit={unit}
-          number={unit.unitid}
-          lessons={lessons}
-          key={unit.unitid}
-        />
-      );
+      if (unit.unitid < 11) {
+        return (
+          <DashCard
+            unit={unit}
+            number={unit.unitid}
+            lessons={lessons}
+            key={unit.unitid}
+          />
+        );
+      }
     });
-
+    const renderedList2 = units.map(unit => {
+      if (unit.unitid >= 11) {
+        return (
+          <DashCard
+            unit={unit}
+            number={unit.unitid}
+            lessons={lessons}
+            key={unit.unitid}
+          />
+        );
+      }
+    });
     return (
       <div className="module-list">
-        <Accordion>{renderedList}</Accordion>
+        <div className="semester">
+          Semester 1
+          <Accordion>{renderedList}</Accordion>
+        </div>
+        <div className="semester">
+          Semester 2
+          <Accordion>{renderedList2}</Accordion>
+        </div>
       </div>
     );
   }
