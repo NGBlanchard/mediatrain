@@ -112,7 +112,7 @@ class App extends React.Component {
         objective: "",
         video: "",
         content:
-          "This course presents a historical overview of the American literary tradition. Students will be exposed to American culture, heritage, and history through the study of American literature, to develop and apply effective communication skills through speaking and active listening in small and large groups, and to continue advancement towards refined writing skills.",
+          "Welcome to American Literature! This module will help you get settled before you embark on the journey through this course. \n If you haven't already, acquire a copy of the required books. Make sure you get the same ISBN as is specified on the syllabus.",
         closing: "",  
         questions: [],
       },

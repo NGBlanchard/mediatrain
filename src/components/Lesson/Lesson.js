@@ -27,7 +27,9 @@ class Lesson extends React.Component {
           <main className="lesson-main">
             <section className="pre-header">Lesson {lesson.number}</section>
             <header className="lesson-header">{lesson.name}</header>
-            <section className="lesson-content">{lesson.content}</section>
+            <section className="lesson-content">{lesson.content.split("\n").map((i,key) => {
+            return <div className="display-linebreak" key={key}>{i}</div>;
+        })}</section>
             {lesson.video.length !== 0 ? (
               <section className="video">
                 <iframe

@@ -32,7 +32,7 @@ class WorkCard extends React.Component {
       </section>
       <form className="work-form" onSubmit={this.handleSubmit}>
         <Form.Group controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Post a link to your work below</Form.Label>
+          <Form.Label>Submit a link to your Google Doc below. Be sure to adjust any sharing permissions on the doc so that your teacher can view it.</Form.Label>
           <Form.Control as="textarea" rows="4" />
         </Form.Group>
         <Form.Group>
