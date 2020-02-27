@@ -15,7 +15,7 @@ class App extends React.Component {
     details: {
       class: "American Literature",
       teacher: "Nathan Blanchard",
-      progress: 5
+      progress: 20
     },
     units: [
       {
@@ -204,77 +204,7 @@ class App extends React.Component {
         unitid: 1,
         content: "lorem ipsum",
         closing: "",
-        questions: [
-          {
-            id: 1,
-            text: "What does JSON stand for",
-            choices: [
-              {
-                id: "a",
-                text: "JavaScript Oriented Notation"
-              },
-              {
-                id: "b",
-                text: "JavaScript Object Notation"
-              },
-              {
-                id: "c",
-                text: "JavaScript Organic Notation"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 2,
-            text: "Which company mantains ReactJS",
-            choices: [
-              {
-                id: "a",
-                text: "Google"
-              },
-              {
-                id: "b",
-                text: "Facebook"
-              },
-              {
-                id: "c",
-                text: "Airbnb"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 3,
-            text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "a"
-          },
-          {
-            id: 4,
-            text: "Is ReactJS a framework by itself?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "b"
-          }
-        ]
+        questions: [],
       },
       {
         id: 4,
@@ -285,77 +215,7 @@ class App extends React.Component {
         unitid: 1,
         content: "lorem ipsum",
         closing: "",
-        questions: [
-          {
-            id: 1,
-            text: "What does JSON stand for",
-            choices: [
-              {
-                id: "a",
-                text: "JavaScript Oriented Notation"
-              },
-              {
-                id: "b",
-                text: "JavaScript Object Notation"
-              },
-              {
-                id: "c",
-                text: "JavaScript Organic Notation"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 2,
-            text: "Which company mantains ReactJS",
-            choices: [
-              {
-                id: "a",
-                text: "Google"
-              },
-              {
-                id: "b",
-                text: "Facebook"
-              },
-              {
-                id: "c",
-                text: "Airbnb"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 3,
-            text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "a"
-          },
-          {
-            id: 4,
-            text: "Is ReactJS a framework by itself?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "b"
-          }
-        ]
+        questions: [],
       },
       {
         id: 5,
@@ -845,7 +705,7 @@ class App extends React.Component {
       },
       {
         id: 11,
-        number: 4.1,
+        number: 4.01,
         name: "Introduction: The American Dream",
         objective: "",
         video: "",
@@ -926,7 +786,7 @@ class App extends React.Component {
       },
       {
         id: 12,
-        number: 4.2,
+        number: 4.02,
         name: "F. Scott Fitzgerald",
         objective: "",
         video: "",
@@ -1007,7 +867,7 @@ class App extends React.Component {
       },
       {
         id: 13,
-        number: 4.3,
+        number: 4.03,
         name: "The Great Gatsby: Chapter One",
         objective: "",
         video: "",
@@ -1088,7 +948,7 @@ class App extends React.Component {
       },
       {
         id: 14,
-        number: 4.4,
+        number: 4.04,
         name: "The Great Gatsby: Chapter Two",
         objective: "",
         video: "",
@@ -1169,7 +1029,7 @@ class App extends React.Component {
       },
       {
         id: 15,
-        number: 4.5,
+        number: 4.05,
         name: "The Great Gatsby: Chapter Three",
         objective: "",
         video: "",
@@ -1250,7 +1110,7 @@ class App extends React.Component {
       },
       {
         id: 16,
-        number: 4.6,
+        number: 4.06,
         name: "The Great Gatsby: Chapter Four",
         objective: "",
         video: "",
@@ -1331,7 +1191,7 @@ class App extends React.Component {
       },
       {
         id: 17,
-        number: 4.7,
+        number: 4.07,
         name: "The Great Gatsby: Chapter Five",
         objective: "",
         video: "",
@@ -1412,7 +1272,7 @@ class App extends React.Component {
       },
       {
         id: 18,
-        number: 4.8,
+        number: 4.08,
         name: "The Great Gatsby: Chapter Six",
         objective: "",
         video: "",
@@ -1493,7 +1353,7 @@ class App extends React.Component {
       },
       {
         id: 19,
-        number: 4.9,
+        number: 4.09,
         name: "The Great Gatsby: Chapter Seven",
         objective: "",
         video: "",
@@ -2061,7 +1921,7 @@ class App extends React.Component {
       {
         id: 26,
         number: 5.3,
-        name: "Descriptive Language",
+        name: "Vivid Language",
         objective: "",
         video: "",
         unitid: 5,
@@ -2142,7 +2002,7 @@ class App extends React.Component {
       {
         id: 27,
         number: 5.4,
-        name: "The Crux of Narrative",
+        name: "The Crux of Stories",
         objective: "",
         video: "",
         unitid: 5,
@@ -3720,9 +3580,9 @@ class App extends React.Component {
     ]
   };
 
-  setProgress = score => {
+  setProgress = increment => {
     let details = { ...this.state.details };
-    details.progress = details.progress + score;
+    details.progress = details.progress + increment;
     this.setState({
       details
     });
