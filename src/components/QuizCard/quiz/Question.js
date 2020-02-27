@@ -35,7 +35,6 @@ class Question extends React.Component {
     const { question } = this.props;
     return (
       <form className="question-form">
-        
         <h3>{question.text}</h3>
         <hr />
         <ul className="list-group">
@@ -63,7 +62,6 @@ class Question extends React.Component {
           ""
         )}
         <div className="submit-button-container">
-          
           <Button
             type="submit"
             variant="outline-success"

@@ -39,7 +39,7 @@ class WorkCard extends React.Component {
           <Button
             variant="outline-success"
             size="lg"
-            // className="submit-work"
+            className="submit-work"
             onClick={this.handleSubmit}
           >
             {this.state.submitted === false ? "Submit Work" : "Submitted!"}
@@ -49,7 +49,7 @@ class WorkCard extends React.Component {
           <Button
             variant="outline-secondary"
             size="lg"
-            // className="result-button"
+            className="result-button"
             onClick={this.handleNext}
           >
             Next Lesson
