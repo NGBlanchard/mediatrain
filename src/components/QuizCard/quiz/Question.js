@@ -66,7 +66,7 @@ class Question extends React.Component {
           
           <Button
             type="submit"
-            variant="outline-secondary"
+            variant="outline-success"
             size="lg"
             className="submit-button"
             onClick={this.handleSubmit.bind(this)}

@@ -226,77 +226,7 @@ class App extends React.Component {
         unitid: 1,
         content: "lorem ipsum",
         closing: "",
-        questions: [
-          {
-            id: 1,
-            text: "What does JSON stand for",
-            choices: [
-              {
-                id: "a",
-                text: "JavaScript Oriented Notation"
-              },
-              {
-                id: "b",
-                text: "JavaScript Object Notation"
-              },
-              {
-                id: "c",
-                text: "JavaScript Organic Notation"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 2,
-            text: "Which company mantains ReactJS",
-            choices: [
-              {
-                id: "a",
-                text: "Google"
-              },
-              {
-                id: "b",
-                text: "Facebook"
-              },
-              {
-                id: "c",
-                text: "Airbnb"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 3,
-            text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "a"
-          },
-          {
-            id: 4,
-            text: "Is ReactJS a framework by itself?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "b"
-          }
-        ]
+        questions: [],
       },
       {
         id: 6,
@@ -307,77 +237,8 @@ class App extends React.Component {
         unitid: 1,
         content: "lorem ipsum",
         closing: "",
-        questions: [
-          {
-            id: 1,
-            text: "What does JSON stand for",
-            choices: [
-              {
-                id: "a",
-                text: "JavaScript Oriented Notation"
-              },
-              {
-                id: "b",
-                text: "JavaScript Object Notation"
-              },
-              {
-                id: "c",
-                text: "JavaScript Organic Notation"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 2,
-            text: "Which company mantains ReactJS",
-            choices: [
-              {
-                id: "a",
-                text: "Google"
-              },
-              {
-                id: "b",
-                text: "Facebook"
-              },
-              {
-                id: "c",
-                text: "Airbnb"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 3,
-            text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "a"
-          },
-          {
-            id: 4,
-            text: "Is ReactJS a framework by itself?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "b"
-          }
-        ]
+        questions: [],
+        work: "Here is the work",
       },
       {
         id: 7,
@@ -388,77 +249,7 @@ class App extends React.Component {
         unitid: 2,
         content: "lorem ipsum",
         closing: "",
-        questions: [
-          {
-            id: 1,
-            text: "What does JSON stand for",
-            choices: [
-              {
-                id: "a",
-                text: "JavaScript Oriented Notation"
-              },
-              {
-                id: "b",
-                text: "JavaScript Object Notation"
-              },
-              {
-                id: "c",
-                text: "JavaScript Organic Notation"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 2,
-            text: "Which company mantains ReactJS",
-            choices: [
-              {
-                id: "a",
-                text: "Google"
-              },
-              {
-                id: "b",
-                text: "Facebook"
-              },
-              {
-                id: "c",
-                text: "Airbnb"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 3,
-            text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "a"
-          },
-          {
-            id: 4,
-            text: "Is ReactJS a framework by itself?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "b"
-          }
-        ]
+        questions: [],
       },
       {
         id: 8,
@@ -469,77 +260,8 @@ class App extends React.Component {
         unitid: 2,
         content: "lorem ipsum",
         closing: "",
-        questions: [
-          {
-            id: 1,
-            text: "What does JSON stand for",
-            choices: [
-              {
-                id: "a",
-                text: "JavaScript Oriented Notation"
-              },
-              {
-                id: "b",
-                text: "JavaScript Object Notation"
-              },
-              {
-                id: "c",
-                text: "JavaScript Organic Notation"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 2,
-            text: "Which company mantains ReactJS",
-            choices: [
-              {
-                id: "a",
-                text: "Google"
-              },
-              {
-                id: "b",
-                text: "Facebook"
-              },
-              {
-                id: "c",
-                text: "Airbnb"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 3,
-            text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "a"
-          },
-          {
-            id: 4,
-            text: "Is ReactJS a framework by itself?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "b"
-          }
-        ]
+        questions: [],
+        work: "Here is the work"
       },
       {
         id: 9,
@@ -712,77 +434,7 @@ class App extends React.Component {
         unitid: 4,
         content: "lorem ipsum",
         closing: "",
-        questions: [
-          {
-            id: 1,
-            text: "What does JSON stand for",
-            choices: [
-              {
-                id: "a",
-                text: "JavaScript Oriented Notation"
-              },
-              {
-                id: "b",
-                text: "JavaScript Object Notation"
-              },
-              {
-                id: "c",
-                text: "JavaScript Organic Notation"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 2,
-            text: "Which company mantains ReactJS",
-            choices: [
-              {
-                id: "a",
-                text: "Google"
-              },
-              {
-                id: "b",
-                text: "Facebook"
-              },
-              {
-                id: "c",
-                text: "Airbnb"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 3,
-            text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "a"
-          },
-          {
-            id: 4,
-            text: "Is ReactJS a framework by itself?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
-              }
-            ],
-            correct: "b"
-          }
-        ]
+        questions: [],
       },
       {
         id: 12,

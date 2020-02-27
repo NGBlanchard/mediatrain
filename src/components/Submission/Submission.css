@@ -5,10 +5,6 @@
   margin-top: 50px;
 }
 
-.work-button {
-  font-size: 18px;;
-}
-
 .submission-header {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
@@ -16,10 +12,22 @@
   margin-bottom: 20px;
 }
 
-.button-container {
+/* .button-container {
   text-align: center;
-}
+} */
 
 .next-button {
   box-shadow: 0px 0px 8px #b8b8b8;
 }
+
+.submit-button {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  /* box-shadow: 0px 0px 8px #b8b8b8; */
+}
+
+/* .submit-button-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+} */
