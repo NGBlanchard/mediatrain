@@ -39,6 +39,7 @@ class DashCard extends React.Component {
             </div>
             <span className="lesson-count">/{lessonsForUnit.length}</span>
           </div>
+          <p className="arrow">&#9660;</p>
         </Accordion.Toggle>
         {renderedLessons}
       </Card>

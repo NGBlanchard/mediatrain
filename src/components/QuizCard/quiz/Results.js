@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import ModulesContext from "../..//ModulesContext";
+import ModulesContext from "../../ModulesContext";
 
 
 class Results extends React.Component {

@@ -15,7 +15,7 @@ class App extends React.Component {
     details: {
       class: "American Literature",
       teacher: "Nathan Blanchard",
-      progress: 80
+      progress: 5
     },
     units: [
       {
@@ -114,76 +114,7 @@ class App extends React.Component {
         content:
           "This course presents a historical overview of the American literary tradition. Students will be exposed to American culture, heritage, and history through the study of American literature, to develop and apply effective communication skills through speaking and active listening in small and large groups, and to continue advancement towards refined writing skills.",
         closing: "",  
-        questions: [
-          {
-            id: 1,
-            text: "The answer is B",
-            choices: [
-              {
-                id: "a",
-                text: "This is A"
-              },
-              {
-                id: "b",
-                text: "This is B"
-              },
-              {
-                id: "c",
-                text: "This is C"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 2,
-            text: "The answer is A",
-            choices: [
-              {
-                id: "a",
-                text: "This is A"
-              },
-              {
-                id: "b",
-                text: "This is B"
-              },
-              {
-                id: "c",
-                text: "This is C"
-              }
-            ],
-            correct: "a"
-          },
-          {
-            id: 3,
-            text: "The answer is B",
-            choices: [
-              {
-                id: "a",
-                text: "This is A"
-              },
-              {
-                id: "b",
-                text: "This is B"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 4,
-            text: "The answer is A",
-            choices: [
-              {
-                id: "a",
-                text: "This is A"
-              },
-              {
-                id: "b",
-                text: "This is B"
-              }
-            ],
-            correct: "a"
-          }
-        ]
+        questions: [],
       },
       {
         id: 2,
@@ -197,72 +128,71 @@ class App extends React.Component {
         questions: [
           {
             id: 1,
-            text: "What does JSON stand for",
+            text: "The answer is B",
             choices: [
               {
                 id: "a",
-                text: "JavaScript Oriented Notation"
+                text: "This is A"
               },
               {
                 id: "b",
-                text: "JavaScript Object Notation"
+                text: "This is B"
               },
               {
                 id: "c",
-                text: "JavaScript Organic Notation"
+                text: "This is C"
               }
             ],
             correct: "b"
           },
           {
             id: 2,
-            text: "Which company mantains ReactJS",
+            text: "The answer is A",
             choices: [
               {
                 id: "a",
-                text: "Google"
+                text: "This is A"
               },
               {
                 id: "b",
-                text: "Facebook"
+                text: "This is B"
               },
               {
                 id: "c",
-                text: "Airbnb"
-              }
-            ],
-            correct: "b"
-          },
-          {
-            id: 3,
-            text:
-              "Is it an antipattern to include props in the getInitialState method of a component?",
-            choices: [
-              {
-                id: "a",
-                text: "Yes"
-              },
-              {
-                id: "b",
-                text: "No"
+                text: "This is C"
               }
             ],
             correct: "a"
           },
           {
-            id: 4,
-            text: "Is ReactJS a framework by itself?",
+            id: 3,
+            text: "The answer is B",
             choices: [
               {
                 id: "a",
-                text: "Yes"
+                text: "This is A"
               },
               {
                 id: "b",
-                text: "No"
+                text: "This is B"
               }
             ],
             correct: "b"
+          },
+          {
+            id: 4,
+            text: "The answer is A",
+            choices: [
+              {
+                id: "a",
+                text: "This is A"
+              },
+              {
+                id: "b",
+                text: "This is B"
+              }
+            ],
+            correct: "a"
           }
         ]
       },{

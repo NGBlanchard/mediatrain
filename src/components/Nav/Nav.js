@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Navbar from 'react-bootstrap/Navbar'
+import Navbar from "react-bootstrap/Navbar";
 import Dashboard from "../../images/dashboard.png";
 import Messages from "../../images/messagesblue.png";
 import Logo from "../../images/logo.png";
-import CurrentGrade from "../CurrentGrade/CurrentGrade";
-
 
 import ModulesContext from "../ModulesContext";
 
@@ -37,7 +35,11 @@ export default class Nav extends Component {
             <img src={Messages} className="messages" alt="messages logo"></img>
           </Link>
         </div>
-        <CurrentGrade />
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            Current Grade: <a href="#login">A</a>
+          </Navbar.Text>
+        </Navbar.Collapse>
       </Navbar>
     );
   }

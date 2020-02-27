@@ -4,6 +4,7 @@
   font-size: 18px;
   font-weight: bolder;
   margin: 20px;
+  margin-top:25px;
   line-height: 25px;
   color: rgb(69, 69, 69);
   /* background-color: #FF6451; */
@@ -63,4 +64,18 @@
 
 .lesson-count {
   font-size: 11px;
+  margin: 0px;
+  padding: 0px;
 }
+
+.arrow {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  display: none;
+  color: rgb(247, 247, 247);
+  line-height: 2px;
+  font-size: 10px;
+}
+
+
