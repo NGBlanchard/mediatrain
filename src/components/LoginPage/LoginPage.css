@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.LoginPage {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(69, 69, 69);
+}
+
+h2 {
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.red {
+  color: #FF6451;
+}
+
+.success-alert {
+  display: none;
+}
+
+.Input,
+.Textarea {
+  border: 1px solid #ddd;
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  border-radius: 4px;
+  color: rgb(69, 69, 69);
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.Input::placeholder,
+.Textarea::placeholder {
+  color: #ccc;
+}
+
+.Textarea {
+  resize: vertical;
+}
+
+.please-login{
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.demo {
+  margin: 10px;
+}

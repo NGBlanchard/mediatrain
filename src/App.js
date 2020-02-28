@@ -1,7 +1,8 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import ModulesContext from "./components/ModulesContext";
-import Login from "./components/Login/Login";
+import LoginPage from "./components/LoginPage/LoginPage";
+import RegistrationPage from "./components/RegistrationPage/RegistrationPage";
 import Nav from "./components/Nav/Nav";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Lesson from "./components/Lesson/Lesson";
@@ -3274,7 +3275,8 @@ class App extends React.Component {
           <ModulesContext.Provider value={contextValue}>
             <Nav />
             <Switch>
-              <Route exact path={"/"} component={Login} />
+              <Route exact path={"/"} component={LoginPage} />
+              <Route exact path={"/registration"} component={RegistrationPage} />
               <Route exact path={"/dashboard"} component={Dashboard} />
               <Route exact path={"/messages"} component={Messages} />
               <Route exact path={"/syllabus"} component={Syllabus} />

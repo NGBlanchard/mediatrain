@@ -1,0 +1,19 @@
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.RegistrationForm {
+  width: 400px;
+  margin-left:100px;
+  margin-right: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.success {
+  color: #FF6451;
+  font-weight: bold;
+  margin: 15px;
+  padding: 3px 3px 5px 3px;
+  background-blend-mode: screen;
+}

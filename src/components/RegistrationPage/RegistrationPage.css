@@ -1,0 +1,41 @@
+.RegistrationPage {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(69, 69, 69);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.directions {
+  margin-bottom: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.welcome-header {
+  height: 120px;
+  color: rgb(69, 69, 69);
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 350px;
+}
+
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: 30px;
+}
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+}
+
